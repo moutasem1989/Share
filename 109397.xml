@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MediaContainer size="1" allowSync="1" identifier="com.plexapp.plugins.library" librarySectionID="13" librarySectionTitle="Music" librarySectionUUID="5d243684-58bf-4cce-8f52-4335d87b8d0a" mediaTagPrefix="/system/bundle/media/flags/" mediaTagVersion="1727455477">
+<Track ratingKey="109397" key="/library/metadata/109397" parentRatingKey="109496" grandparentRatingKey="109120" guid="local://109397" parentGuid="local://109496" grandparentGuid="plex://artist/5d07bd15403c6402905942bf" type="track" title="El 3mara" titleSort="3mara" grandparentKey="/library/metadata/109120" parentKey="/library/metadata/109496" librarySectionTitle="Music" librarySectionID="13" librarySectionKey="/library/sections/13" grandparentTitle="Mohamed Monier" parentTitle="Egyptian Party" summary="" parentIndex="1" parentYear="2024" grandparentThumb="/library/metadata/109120/thumb/1728529993" duration="269000" addedAt="1719168255">
+<Media id="121414" duration="269000" bitrate="124" audioChannels="2" audioCodec="opus" container="ogg" hasVoiceActivity="0">
+<Part accessible="1" exists="1" id="180614" key="/library/parts/180614/1714592926/file.opus" duration="269000" file="/AMP/Mohamad Mounir/El 3mara/El 3mara.opus" size="4232905" container="ogg" deepAnalysisVersion="6" hasThumbnail="1" requiredBandwidths="123,123,123,123,123,123,123,123">
+<Stream id="471395" streamType="2" selected="1" codec="opus" index="0" channels="2" bitrate="124" language="English" languageTag="en" languageCode="eng" albumGain="-1.46" albumPeak="0.849794" albumRange="4.816169" audioChannelLayout="stereo" endRamp="-51.00 0.19;-39.80 2.29;-28.94 3.89;-22.61 5.39;-19.96 6.19;-17.82 6.39;-14.45 7.09;-11.30 7.69;-7.70 8.29;-5.63 8.89;-2.79 10.49;0.39 13.79;3.06 48.79;" gain="-1.46" loudness="-16.54" lra="4.82" peak="0.849794" requiredBandwidths="123,123,123,123,123,123,123,123" samplingRate="48000" startRamp="-51.00 0.00;-9.83 1.20;-8.94 1.30;-5.40 3.60;-2.67 9.30;0.83 11.70;3.44 33.80;" title="El 3mara" displayTitle="OPUS (English Stereo)" extendedDisplayTitle="El 3mara (OPUS English Stereo)">
+</Stream>
+</Part>
+</Media>
+<Image alt="El 3mara" type="coverPoster" url="/library/metadata/109120/thumb/1728529993" />
+<Extras size="0">
+</Extras>
+<Related>
+</Related>
+</Track>
+</MediaContainer>
