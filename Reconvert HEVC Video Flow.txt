@@ -1,0 +1,713 @@
+{
+  "_id": "bRYxoCc4E",
+  "name": "Reconvert HEVC Video Flow",
+  "description": "Reconvert HEVC Video Flow",
+  "tags": "",
+  "flowPlugins": [
+    {
+      "name": "Create 8 channel AAC",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandEnsureAudioStream",
+      "version": "1.0.0",
+      "id": "XKkbHCccN",
+      "position": {
+        "x": 1404.0844674178766,
+        "y": 972.028490204494
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "channels": "8",
+        "enableSamplerate": "false",
+        "enableBitrate": "false"
+      }
+    },
+    {
+      "name": "Start with 8 channels",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandStart",
+      "version": "1.0.0",
+      "id": "3KzupsbJI",
+      "position": {
+        "x": 1471.540989147556,
+        "y": 849.4112822737585
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Has 6 channel",
+      "sourceRepo": "Community",
+      "pluginName": "checkChannelCount",
+      "version": "1.0.0",
+      "id": "VWoz8ctyR",
+      "position": {
+        "x": 1596.880591995003,
+        "y": 549.5860916417621
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "channelCount": "6"
+      }
+    },
+    {
+      "name": "Create 6 channel AAC",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandEnsureAudioStream",
+      "version": "1.0.0",
+      "id": "2uuVmjYcn",
+      "position": {
+        "x": 1221.5383836431922,
+        "y": 853.028490204494
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "channels": "6",
+        "enableSamplerate": "false",
+        "enableBitrate": "false"
+      }
+    },
+    {
+      "name": "Start with 6 channels",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandStart",
+      "version": "1.0.0",
+      "id": "-H3l4NqGP",
+      "position": {
+        "x": 1339.7993803932347,
+        "y": 721.980541758889
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Start with 2 channels",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandStart",
+      "version": "1.0.0",
+      "id": "x-dYgnTEN",
+      "position": {
+        "x": 1219.4574169284808,
+        "y": 604.9099421040701
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Has 2 channel",
+      "sourceRepo": "Community",
+      "pluginName": "checkChannelCount",
+      "version": "1.0.0",
+      "id": "qcGhvDLBj",
+      "position": {
+        "x": 1439.8805919950032,
+        "y": 470.5860916417622
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "channelCount": "2"
+      }
+    },
+    {
+      "name": "Has ac3 codec",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "hSFSB98T4",
+      "position": {
+        "x": 1167.1335667330584,
+        "y": 314.5492426265655
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "codec": "ac3"
+      }
+    },
+    {
+      "name": "Input File",
+      "sourceRepo": "Community",
+      "pluginName": "inputFile",
+      "version": "1.0.0",
+      "id": "pE6rU7gkW",
+      "position": {
+        "x": 948,
+        "y": -180
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "fileAccessChecks": "true",
+        "pauseNodeIfAccessChecksFail": "true"
+      }
+    },
+    {
+      "name": "Start",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandStart",
+      "version": "1.0.0",
+      "id": "4Swd6qzvc",
+      "position": {
+        "x": 700.3114779762597,
+        "y": 679.9617332790802
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Execute",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandExecute",
+      "version": "1.0.0",
+      "id": "450g167D8",
+      "position": {
+        "x": 703.2404724454989,
+        "y": 1411.8017206196519
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Set Video Encoder",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandSetVideoEncoder",
+      "version": "1.0.0",
+      "id": "8B_6pRd_U",
+      "position": {
+        "x": 876,
+        "y": 1212
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "ffmpegPreset": "veryslow",
+        "hardwareType": "qsv",
+        "forceEncoding": "true",
+        "ffmpegQuality": "22"
+      }
+    },
+    {
+      "name": "Replace Original File",
+      "sourceRepo": "Community",
+      "pluginName": "replaceOriginalFile",
+      "version": "1.0.0",
+      "id": "4fkfOyR3l",
+      "position": {
+        "x": 264,
+        "y": 1788
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Set Container",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandSetContainer",
+      "version": "1.0.0",
+      "id": "TtKXi3Q7h",
+      "position": {
+        "x": 790.174155944667,
+        "y": 1306.0323879957098
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "forceConform": "true"
+      }
+    },
+    {
+      "name": "Has aac codec",
+      "sourceRepo": "Community",
+      "pluginName": "checkAudioCodec",
+      "version": "1.0.0",
+      "id": "9-Db1sYsG",
+      "position": {
+        "x": 1096.4804985131173,
+        "y": 232.7752915189641
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Has 1 channel",
+      "sourceRepo": "Community",
+      "pluginName": "checkChannelCount",
+      "version": "1.0.0",
+      "id": "Hbg-Bs9m4",
+      "position": {
+        "x": 1290.301600269486,
+        "y": 390.8506982792813
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "channelCount": "1"
+      }
+    },
+    {
+      "name": "Reorder Streams",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandRorderStreams",
+      "version": "1.0.0",
+      "id": "_n3TnZilH",
+      "position": {
+        "x": 933.67174473564,
+        "y": 1112.091651136637
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "languages": ""
+      }
+    },
+    {
+      "name": "Create 2 channel AAC",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandEnsureAudioStream",
+      "version": "1.0.0",
+      "id": "_s3dba4Yj",
+      "position": {
+        "x": 1061.5201413440602,
+        "y": 723.8579321438172
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Require Review",
+      "sourceRepo": "Community",
+      "pluginName": "requireReview",
+      "version": "1.0.0",
+      "id": "_XQ5tMseA",
+      "position": {
+        "x": 396,
+        "y": 1680
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Run MKVPropEdit",
+      "sourceRepo": "Community",
+      "pluginName": "runMkvPropEdit",
+      "version": "1.0.0",
+      "id": "avPy3JfEY",
+      "position": {
+        "x": 636.980743002752,
+        "y": 1502.2730153874813
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Image Removal",
+      "sourceRepo": "Community",
+      "pluginName": "runClassicTranscodePlugin",
+      "version": "2.0.0",
+      "id": "87II7onv3",
+      "position": {
+        "x": 975.6542682975971,
+        "y": 141.4988521556676
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_MC93_MigzImageRemoval"
+      }
+    },
+    {
+      "name": "Run Health Check",
+      "sourceRepo": "Community",
+      "pluginName": "runHealthCheck",
+      "version": "1.0.0",
+      "id": "d7bJ-XDLt",
+      "position": {
+        "x": 540,
+        "y": 1584
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "type": "quick"
+      }
+    },
+    {
+      "name": "Check Video Resolution",
+      "sourceRepo": "Community",
+      "pluginName": "checkVideoResolution",
+      "version": "1.0.0",
+      "id": "x7vlRKWDm",
+      "position": {
+        "x": 972,
+        "y": 972
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Set Video Resolution",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandSetVdeoResolution",
+      "version": "1.0.0",
+      "id": "zda-8Htf9",
+      "position": {
+        "x": 1140,
+        "y": 1080
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "targetResolution": "1440p"
+      }
+    },
+    {
+      "name": "Check File Extension",
+      "sourceRepo": "Community",
+      "pluginName": "checkFileExtension",
+      "version": "1.0.0",
+      "id": "QwnQZATBQ",
+      "position": {
+        "x": 840,
+        "y": -96
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "extensions": "mkv"
+      }
+    },
+    {
+      "name": "Check Video Codec",
+      "sourceRepo": "Community",
+      "pluginName": "checkVideoCodec",
+      "version": "1.0.0",
+      "id": "uFZPdGXIY",
+      "position": {
+        "x": 696,
+        "y": -36
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Check Video Resolution",
+      "sourceRepo": "Community",
+      "pluginName": "checkVideoResolution",
+      "version": "1.0.0",
+      "id": "aO4xyy-TA",
+      "position": {
+        "x": 552,
+        "y": 60
+      },
+      "fpEnabled": true
+    }
+  ],
+  "flowEdges": [
+    {
+      "source": "8B_6pRd_U",
+      "sourceHandle": "1",
+      "target": "TtKXi3Q7h",
+      "targetHandle": null,
+      "id": "epqtLsPuG"
+    },
+    {
+      "source": "TtKXi3Q7h",
+      "sourceHandle": "1",
+      "target": "450g167D8",
+      "targetHandle": null,
+      "id": "ljOeP0cAZ"
+    },
+    {
+      "source": "9-Db1sYsG",
+      "sourceHandle": "2",
+      "target": "hSFSB98T4",
+      "targetHandle": null,
+      "id": "Ez5CVN0HQ"
+    },
+    {
+      "source": "hSFSB98T4",
+      "sourceHandle": "2",
+      "target": "Hbg-Bs9m4",
+      "targetHandle": null,
+      "id": "msC-Tu13X"
+    },
+    {
+      "source": "Hbg-Bs9m4",
+      "sourceHandle": "2",
+      "target": "qcGhvDLBj",
+      "targetHandle": null,
+      "id": "MjvBlzHLN"
+    },
+    {
+      "source": "Hbg-Bs9m4",
+      "sourceHandle": "err1",
+      "target": "bzJ5LYrrr",
+      "targetHandle": null,
+      "id": "OcZ2opZwZ"
+    },
+    {
+      "source": "9-Db1sYsG",
+      "sourceHandle": "1",
+      "target": "4Swd6qzvc",
+      "targetHandle": null,
+      "id": "e2pcl5dUj"
+    },
+    {
+      "source": "hSFSB98T4",
+      "sourceHandle": "1",
+      "target": "4Swd6qzvc",
+      "targetHandle": null,
+      "id": "L1YANa7L9"
+    },
+    {
+      "source": "_n3TnZilH",
+      "sourceHandle": "1",
+      "target": "8B_6pRd_U",
+      "targetHandle": null,
+      "id": "uP6lYTlmw"
+    },
+    {
+      "source": "x-dYgnTEN",
+      "sourceHandle": "1",
+      "target": "_s3dba4Yj",
+      "targetHandle": null,
+      "id": "XanasLSGk"
+    },
+    {
+      "source": "-H3l4NqGP",
+      "sourceHandle": "1",
+      "target": "2uuVmjYcn",
+      "targetHandle": null,
+      "id": "9NTFtUVLD"
+    },
+    {
+      "source": "qcGhvDLBj",
+      "sourceHandle": "1",
+      "target": "x-dYgnTEN",
+      "targetHandle": null,
+      "id": "HhJpZ1O3j"
+    },
+    {
+      "source": "Hbg-Bs9m4",
+      "sourceHandle": "1",
+      "target": "x-dYgnTEN",
+      "targetHandle": null,
+      "id": "wKzAEE3na"
+    },
+    {
+      "source": "qcGhvDLBj",
+      "sourceHandle": "2",
+      "target": "VWoz8ctyR",
+      "targetHandle": null,
+      "id": "vQ7-bGkVj"
+    },
+    {
+      "source": "VWoz8ctyR",
+      "sourceHandle": "1",
+      "target": "-H3l4NqGP",
+      "targetHandle": null,
+      "id": "mf6eDDPEH"
+    },
+    {
+      "source": "VWoz8ctyR",
+      "sourceHandle": "2",
+      "target": "3KzupsbJI",
+      "targetHandle": null,
+      "id": "FrDsIlXHG"
+    },
+    {
+      "source": "3KzupsbJI",
+      "sourceHandle": "1",
+      "target": "XKkbHCccN",
+      "targetHandle": null,
+      "id": "aI2JAIpw3"
+    },
+    {
+      "source": "450g167D8",
+      "sourceHandle": "1",
+      "target": "avPy3JfEY",
+      "targetHandle": null,
+      "id": "dDN1LRNyo"
+    },
+    {
+      "source": "87II7onv3",
+      "sourceHandle": "1",
+      "target": "9-Db1sYsG",
+      "targetHandle": null,
+      "id": "bVzq9aOUV"
+    },
+    {
+      "source": "d7bJ-XDLt",
+      "sourceHandle": "1",
+      "target": "_XQ5tMseA",
+      "targetHandle": null,
+      "id": "a4OvDpd4E"
+    },
+    {
+      "source": "87II7onv3",
+      "sourceHandle": "2",
+      "target": "9-Db1sYsG",
+      "targetHandle": null,
+      "id": "vg4tyxWXk"
+    },
+    {
+      "source": "4Swd6qzvc",
+      "sourceHandle": "err1",
+      "target": "exMj3oOpQ",
+      "targetHandle": null,
+      "id": "Q9C9Hof8r"
+    },
+    {
+      "source": "x7vlRKWDm",
+      "sourceHandle": "6",
+      "target": "zda-8Htf9",
+      "targetHandle": null,
+      "id": "QQQauHyf9"
+    },
+    {
+      "source": "x7vlRKWDm",
+      "sourceHandle": "7",
+      "target": "zda-8Htf9",
+      "targetHandle": null,
+      "id": "103NCVeWl"
+    },
+    {
+      "source": "x7vlRKWDm",
+      "sourceHandle": "8",
+      "target": "zda-8Htf9",
+      "targetHandle": null,
+      "id": "DNQb_qA91"
+    },
+    {
+      "source": "zda-8Htf9",
+      "sourceHandle": "1",
+      "target": "_n3TnZilH",
+      "targetHandle": null,
+      "id": "2eskbini8"
+    },
+    {
+      "source": "4Swd6qzvc",
+      "sourceHandle": "1",
+      "target": "x7vlRKWDm",
+      "targetHandle": null,
+      "id": "Ggy3zHnoF"
+    },
+    {
+      "source": "_s3dba4Yj",
+      "sourceHandle": "1",
+      "target": "x7vlRKWDm",
+      "targetHandle": null,
+      "id": "XEoIntCEg"
+    },
+    {
+      "source": "2uuVmjYcn",
+      "sourceHandle": "1",
+      "target": "x7vlRKWDm",
+      "targetHandle": null,
+      "id": "11hDqs3Ll"
+    },
+    {
+      "source": "XKkbHCccN",
+      "sourceHandle": "1",
+      "target": "x7vlRKWDm",
+      "targetHandle": null,
+      "id": "IcB4qbsRk"
+    },
+    {
+      "source": "x7vlRKWDm",
+      "sourceHandle": "5",
+      "target": "_n3TnZilH",
+      "targetHandle": null,
+      "id": "exe6tZj0z"
+    },
+    {
+      "source": "x7vlRKWDm",
+      "sourceHandle": "4",
+      "target": "_n3TnZilH",
+      "targetHandle": null,
+      "id": "8PYMT8HFW"
+    },
+    {
+      "source": "x7vlRKWDm",
+      "sourceHandle": "3",
+      "target": "_n3TnZilH",
+      "targetHandle": null,
+      "id": "5iPxnX2hV"
+    },
+    {
+      "source": "x7vlRKWDm",
+      "sourceHandle": "2",
+      "target": "_n3TnZilH",
+      "targetHandle": null,
+      "id": "r4PgvCv63"
+    },
+    {
+      "source": "x7vlRKWDm",
+      "sourceHandle": "1",
+      "target": "_n3TnZilH",
+      "targetHandle": null,
+      "id": "rXGm4WLH3"
+    },
+    {
+      "source": "QwnQZATBQ",
+      "sourceHandle": "2",
+      "target": "87II7onv3",
+      "targetHandle": null,
+      "id": "DNcYt3cGn"
+    },
+    {
+      "source": "uFZPdGXIY",
+      "sourceHandle": "2",
+      "target": "87II7onv3",
+      "targetHandle": null,
+      "id": "9PtsWQHzU"
+    },
+    {
+      "source": "pE6rU7gkW",
+      "sourceHandle": "1",
+      "target": "QwnQZATBQ",
+      "targetHandle": null,
+      "id": "O6aMSRdt9"
+    },
+    {
+      "source": "QwnQZATBQ",
+      "sourceHandle": "1",
+      "target": "uFZPdGXIY",
+      "targetHandle": null,
+      "id": "UBkWLsQjy"
+    },
+    {
+      "source": "uFZPdGXIY",
+      "sourceHandle": "1",
+      "target": "aO4xyy-TA",
+      "targetHandle": null,
+      "id": "kRxjgx7ht"
+    },
+    {
+      "source": "aO4xyy-TA",
+      "sourceHandle": "9",
+      "target": "87II7onv3",
+      "targetHandle": null,
+      "id": "CItF2aBC3"
+    },
+    {
+      "source": "aO4xyy-TA",
+      "sourceHandle": "8",
+      "target": "87II7onv3",
+      "targetHandle": null,
+      "id": "A3N7_vvLG"
+    },
+    {
+      "source": "aO4xyy-TA",
+      "sourceHandle": "7",
+      "target": "87II7onv3",
+      "targetHandle": null,
+      "id": "F3ZC6M1wV"
+    },
+    {
+      "source": "aO4xyy-TA",
+      "sourceHandle": "6",
+      "target": "87II7onv3",
+      "targetHandle": null,
+      "id": "3YXx9ORHD"
+    },
+    {
+      "source": "avPy3JfEY",
+      "sourceHandle": "1",
+      "target": "d7bJ-XDLt",
+      "targetHandle": null,
+      "id": "xJWXt2E3S"
+    },
+    {
+      "source": "_XQ5tMseA",
+      "sourceHandle": "1",
+      "target": "4fkfOyR3l",
+      "targetHandle": null,
+      "id": "mSBgpI4-R"
+    },
+    {
+      "source": "x7vlRKWDm",
+      "sourceHandle": "9",
+      "target": "zda-8Htf9",
+      "targetHandle": null,
+      "id": "wK6uULHCH"
+    }
+  ]
+}
