@@ -1,0 +1,596 @@
+2025-12-11T17:59:20.212Z BStE6TKdCT:[Step S01] [2.58.02] Server relay initialising job
+2025-12-11T17:59:20.214Z BStE6TKdCT:Server: linux_x64_docker_true
+2025-12-11T17:59:20.215Z BStE6TKdCT:Server relay adding file to staged files
+2025-12-11T17:59:20.215Z BStE6TKdCT:Server relay sending job to Node relay: InternalNode
+2025-12-11T17:59:20.216Z BStE6TKdCT:Node[InternalNode]:[Step N01] [2.58.02] Node relay received job
+2025-12-11T17:59:20.216Z BStE6TKdCT:Node[InternalNode]:{"nodeName":"InternalNode","serverURL":"anon_vcplbw//anon_u5q5u","serverIP":"0.0.0.0","serverPort":"8266","handbrakePath":"","ffmpegPath":"","mkvpropeditPath":"","pathTranslators":[{"server":"","node":""}],"nodeType":"manon_ay8hned","anon_8fqq3":"/anon_ay8hn/anon_8fqq3","logLevel":"INFO","priority":-1,"platform_arch_isdocker":"linux_x64_docker_true","processPid":805,"cronPluginUpdate":"","apiKey":"*****","maxLogSizeMB":10,"pollInterval":2000,"startPaused":false,"nodeID":"Eo9Pvp6ca","seededWorkerLimits":{},"nodeRegisteredCount":1}
+2025-12-11T17:59:20.216Z BStE6TKdCT:Node[InternalNode]:Node relay sending job to worker:clear-cats
+2025-12-11T17:59:20.216Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W01] Received file, original: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:20.217Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"workerType":"transcodegpu"}
+2025-12-11T17:59:20.217Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"ffmpegPath":"tdarr-ffmpeg"}
+2025-12-11T17:59:20.217Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"handbrakePath":"HandBrakeCLI"}
+2025-12-11T17:59:20.218Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"mkvpropeditPath":"mkvpropedit"}
+2025-12-11T17:59:20.218Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"gpuSelect":"qsv"}
+2025-12-11T17:59:20.218Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"allowGpuDoCpu":true}
+2025-12-11T17:59:20.218Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"thoroughHealthCheckCpuExtraInputArgs":""}
+2025-12-11T17:59:20.219Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"thoroughHealthCheckGpuExtraInputArgs":""}
+2025-12-11T17:59:20.219Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"thoroughHealthCheckCpuExtraArgs":""}
+2025-12-11T17:59:20.219Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"thoroughHealthCheckGpuExtraArgs":""}
+2025-12-11T17:59:20.219Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"logFullCliOutput":false}
+2025-12-11T17:59:20.220Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"runMkvpropedit":true}
+2025-12-11T17:59:20.220Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"dontCleanWorkerCacheFolder":false}
+2025-12-11T17:59:20.220Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Path translating objects
+2025-12-11T17:59:20.221Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Running path translator tests
+2025-12-11T17:59:20.222Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Path translator tests passed
+2025-12-11T17:59:20.222Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"librarySettings":{"_id":"vUgS7F5Gp","priority":2,"name":"Movies","folder":"/anon_a70fo9/anon_rx34ir","foldersToIgnore":"","folderWatchScanInterval":"86400","scannerThreadCount":2,"cache":"/anon_zssw4o","output":".","folderToFolderConversion":false,"folderToFolderConversionDeleteSource":false,"folderToFolderRecordHistory":true,"copyIfConditionsMet":false,"container":".mkv","containerFilter":"mkv,mp4,mov,m4v,mpg,mpeg,avi,flv,webm,wmv,vob,evo,iso,m2ts,ts","createdAt":1675837380368,"folderWatching":true,"useFsEvents":false,"scheduledScanFindNew":false,"processLibrary":true,"processTranscodes":true,"processHealthChecks":true,"scanOnStart":true,"exifToolScan":true,"anon_a70fo9InfoScan":true,"closedCaptionScan":false,"scanButtons":true,"scanFound":"Files found:0","navItemSelected":"navSourceFolder","pluginIDs":[{"_id":"plugin1","id":"Tdarr_Plugin_MC93_MigzImageRemoval","checked":true,"source":"Community","priority":0,"InputsDB":{}},{"_id":"plugin2","id":"Tdarr_Plugin_lmg1_Reorder_Streams","checked":true,"source":"Community","priority":1,"InputsDB":{}},{"_id":"plugin3","id":"Tdarr_Plugin_MC93_Migz1FFMPEG_CPU","checked":true,"source":"Community","priority":2,"InputsDB":{}},{"_id":"plugin4","id":"Tdarr_Plugin_MC93_Migz1FFMPEG","checked":false,"source":"Community","priority":3,"InputsDB":{}},{"_id":"plugin5","id":"Tdarr_Plugin_a9he_New_file_size_check","checked":true,"source":"Community","priority":4,"InputsDB":{}}],"pluginCommunity":true,"handbrake":true,"ffmpeg":false,"handbrakescan":true,"ffmpegscan":false,"preset":"-Z \"Very Fast 1080p30\"","decisionMaker":{"settingsPlugin":false,"settingsVideo":false,"videoExcludeSwitch":true,"video_codec_names_exclude":[{"codec":"hevc","checked":false},{"codec":"h264","checked":true}],"video_size_range_include":{"min":0,"max":100000},"video_height_range_include":{"min":0,"max":3000},"video_width_range_include":{"min":0,"max":4000},"settingsAudio":false,"audioExcludeSwitch":true,"audio_codec_names_exclude":[{"codec":"mp3","checked":true},{"codec":"aac","checked":false}],"audio_size_range_include":{"min":0,"max":10},"settingsFlows":true},"schedule":[{"_id":"Sun:00-01","checked":true},{"_id":"Sun:01-02","checked":true},{"_id":"Sun:02-03","checked":true},{"_id":"Sun:03-04","checked":true},{"_id":"Sun:04-05","checked":true},{"_id":"Sun:05-06","checked":true},{"_id":"Sun:06-07","checked":true},{"_id":"Sun:07-08","checked":true},{"_id":"Sun:08-09","checked":true},{"_id":"Sun:09-10","checked":true},{"_id":"Sun:10-11","checked":true},{"_id":"Sun:11-12","checked":true},{"_id":"Sun:12-13","checked":true},{"_id":"Sun:13-14","checked":true},{"_id":"Sun:14-15","checked":true},{"_id":"Sun:15-16","checked":true},{"_id":"Sun:16-17","checked":true},{"_id":"Sun:17-18","checked":true},{"_id":"Sun:18-19","checked":true},{"_id":"Sun:19-20","checked":true},{"_id":"Sun:20-21","checked":true},{"_id":"Sun:21-22","checked":true},{"_id":"Sun:22-23","checked":true},{"_id":"Sun:23-00","checked":true},{"_id":"Mon:00-01","checked":true},{"_id":"Mon:01-02","checked":true},{"_id":"Mon:02-03","checked":true},{"_id":"Mon:03-04","checked":true},{"_id":"Mon:04-05","checked":true},{"_id":"Mon:05-06","checked":true},{"_id":"Mon:06-07","checked":true},{"_id":"Mon:07-08","checked":true},{"_id":"Mon:08-09","checked":true},{"_id":"Mon:09-10","checked":true},{"_id":"Mon:10-11","checked":true},{"_id":"Mon:11-12","checked":true},{"_id":"Mon:12-13","checked":true},{"_id":"Mon:13-14","checked":true},{"_id":"Mon:14-15","checked":true},{"_id":"Mon:15-16","checked":true},{"_id":"Mon:16-17","checked":true},{"_id":"Mon:17-18","checked":true},{"_id":"Mon:18-19","checked":true},{"_id":"Mon:19-20","checked":true},{"_id":"Mon:20-21","checked":true},{"_id":"Mon:21-22","checked":true},{"_id":"Mon:22-23","checked":true},{"_id":"Mon:23-00","checked":true},{"_id":"Tue:00-01","checked":true},{"_id":"Tue:01-02","checked":true},{"_id":"Tue:02-03","checked":true},{"_id":"Tue:03-04","checked":true},{"_id":"Tue:04-05","checked":true},{"_id":"Tue:05-06","checked":true},{"_id":"Tue:06-07","checked":true},{"_id":"Tue:07-08","checked":true},{"_id":"Tue:08-09","checked":true},{"_id":"Tue:09-10","checked":true},{"_id":"Tue:10-11","checked":true},{"_id":"Tue:11-12","checked":true},{"_id":"Tue:12-13","checked":true},{"_id":"Tue:13-14","checked":true},{"_id":"Tue:14-15","checked":true},{"_id":"Tue:15-16","checked":true},{"_id":"Tue:16-17","checked":true},{"_id":"Tue:17-18","checked":true},{"_id":"Tue:18-19","checked":true},{"_id":"Tue:19-20","checked":true},{"_id":"Tue:20-21","checked":true},{"_id":"Tue:21-22","checked":true},{"_id":"Tue:22-23","checked":true},{"_id":"Tue:23-00","checked":true},{"_id":"Wed:00-01","checked":true},{"_id":"Wed:01-02","checked":true},{"_id":"Wed:02-03","checked":true},{"_id":"Wed:03-04","checked":true},{"_id":"Wed:04-05","checked":true},{"_id":"Wed:05-06","checked":true},{"_id":"Wed:06-07","checked":true},{"_id":"Wed:07-08","checked":true},{"_id":"Wed:08-09","checked":true},{"_id":"Wed:09-10","checked":true},{"_id":"Wed:10-11","checked":true},{"_id":"Wed:11-12","checked":true},{"_id":"Wed:12-13","checked":true},{"_id":"Wed:13-14","checked":true},{"_id":"Wed:14-15","checked":true},{"_id":"Wed:15-16","checked":true},{"_id":"Wed:16-17","checked":true},{"_id":"Wed:17-18","checked":true},{"_id":"Wed:18-19","checked":true},{"_id":"Wed:19-20","checked":true},{"_id":"Wed:20-21","checked":true},{"_id":"Wed:21-22","checked":true},{"_id":"Wed:22-23","checked":true},{"_id":"Wed:23-00","checked":true},{"_id":"Thur:00-01","checked":true},{"_id":"Thur:01-02","checked":true},{"_id":"Thur:02-03","checked":true},{"_id":"Thur:03-04","checked":true},{"_id":"Thur:04-05","checked":true},{"_id":"Thur:05-06","checked":true},{"_id":"Thur:06-07","checked":true},{"_id":"Thur:07-08","checked":true},{"_id":"Thur:08-09","checked":true},{"_id":"Thur:09-10","checked":true},{"_id":"Thur:10-11","checked":true},{"_id":"Thur:11-12","checked":true},{"_id":"Thur:12-13","checked":true},{"_id":"Thur:13-14","checked":true},{"_id":"Thur:14-15","checked":true},{"_id":"Thur:15-16","checked":true},{"_id":"Thur:16-17","checked":true},{"_id":"Thur:17-18","checked":true},{"_id":"Thur:18-19","checked":true},{"_id":"Thur:19-20","checked":true},{"_id":"Thur:20-21","checked":true},{"_id":"Thur:21-22","checked":true},{"_id":"Thur:22-23","checked":true},{"_id":"Thur:23-00","checked":true},{"_id":"Fri:00-01","checked":true},{"_id":"Fri:01-02","checked":true},{"_id":"Fri:02-03","checked":true},{"_id":"Fri:03-04","checked":true},{"_id":"Fri:04-05","checked":true},{"_id":"Fri:05-06","checked":true},{"_id":"Fri:06-07","checked":true},{"_id":"Fri:07-08","checked":true},{"_id":"Fri:08-09","checked":true},{"_id":"Fri:09-10","checked":true},{"_id":"Fri:10-11","checked":true},{"_id":"Fri:11-12","checked":true},{"_id":"Fri:12-13","checked":true},{"_id":"Fri:13-14","checked":true},{"_id":"Fri:14-15","checked":true},{"_id":"Fri:15-16","checked":true},{"_id":"Fri:16-17","checked":true},{"_id":"Fri:17-18","checked":true},{"_id":"Fri:18-19","checked":true},{"_id":"Fri:19-20","checked":true},{"_id":"Fri:20-21","checked":true},{"_id":"Fri:21-22","checked":true},{"_id":"Fri:22-23","checked":true},{"_id":"Fri:23-00","checked":true},{"_id":"Sat:00-01","checked":true},{"_id":"Sat:01-02","checked":true},{"_id":"Sat:02-03","checked":true},{"_id":"Sat:03-04","checked":true},{"_id":"Sat:04-05","checked":true},{"_id":"Sat:05-06","checked":true},{"_id":"Sat:06-07","checked":true},{"_id":"Sat:07-08","checked":true},{"_id":"Sat:08-09","checked":true},{"_id":"Sat:09-10","checked":true},{"_id":"Sat:10-11","checked":true},{"_id":"Sat:11-12","checked":true},{"_id":"Sat:12-13","checked":true},{"_id":"Sat:13-14","checked":true},{"_id":"Sat:14-15","checked":true},{"_id":"Sat:15-16","checked":true},{"_id":"Sat:16-17","checked":true},{"_id":"Sat:17-18","checked":true},{"_id":"Sat:18-19","checked":true},{"_id":"Sat:19-20","checked":true},{"_id":"Sat:20-21","checked":true},{"_id":"Sat:21-22","checked":true},{"_id":"Sat:22-23","checked":true},{"_id":"Sat:23-00","checked":true}],"totalHealthCheckCount":19939,"totalTranscodeCount":7054,"sizeDiff":888.2824000185356,"holdNewFiles":false,"holdFor":3600,"pluginStackOverview":true,"filterResolutionsSkip":"","filterCodecsSkip":"","filterContainersSkip":"","processPluginsSequentially":true,"flowId":"bRYxoCc4E"}}
+2025-12-11T17:59:20.223Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:20.223Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:20.223Z   "exifToolScan": true,
+2025-12-11T17:59:20.223Z   "anon_a70fo9InfoScan": true,
+2025-12-11T17:59:20.223Z   "closedCaptionScan": false
+2025-12-11T17:59:20.223Z }
+2025-12-11T17:59:20.224Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Updating file properties using mkvpropedit. This may take a long time for large files.
+2025-12-11T17:59:21.225Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Updated file properties using mkvpropedit
+2025-12-11T17:59:21.226Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Node scanning file
+2025-12-11T17:59:23.229Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan complete
+2025-12-11T17:59:23.230Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Original file scanned
+2025-12-11T17:59:23.231Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:fileVersionOriginalLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","DB":"vUgS7F5Gp","footprintId":"xBIiDTLZtA","file":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","fileNameWithoutExtension":"trailer","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","anon_a70fo9InfoRead":"success","closedCaptionRead":"not enabled"},"createdAt":1765475960425,"lastPluginDetails":"none","bit_rate":10345674,"statSync":{"dev":96,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":131072,"ino":88173,"size":34801557,"blocks":55615,"atimeMs":1765475958369.4453,"mtimeMs":1765475958327.4453,"ctimeMs":1765475958327.4453,"birthtimeMs":1765336566300.953,"atime":"2025-12-11T17:59:18.369Z","mtime":"2025-12-11T17:59:18.327Z","ctime":"2025-12-11T17:59:18.327Z","birthtime":"2025-12-10T03:16:06.301Z"},"file_size":33.189351081848145,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / anon_237h2d / MPEG-4 anon_237h2d / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":2560,"height":4552,"coded_width":2560,"coded_height":4552,"closed_captions":0,"film_grain":0,"has_b_frames":2,"sample_aspect_ratio":"5121:5120","display_aspect_ratio":"9:16","pix_fmt":"yuv420p","level":60,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"30/1","avg_frame_rate":"30/1","time_base":"1/1000","start_pts":33,"start_time":"0.033000","bits_per_raw_sample":"8","extradata_size":56,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","ENCODER":"Lavc60.3.100 libx264","BPS":"10240915","DURATION":"00:00:26.833333333","NUMBER_OF_FRAMES":"805","NUMBER_OF_BYTES":"34349311","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:18","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"44100","channels":2,"channel_layout":"stereo","bits_per_sample":0,"initial_padding":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","extradata_size":5,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"language":"eng","HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","BPS":"129340","DURATION":"00:00:26.888000000","NUMBER_OF_FRAMES":"1159","NUMBER_OF_BYTES":"434715","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:18","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}}],"format":{"filename":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","nb_streams":2,"nb_programs":0,"nb_stream_groups":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"26.911000","size":"34801557","bit_rate":"10345674","probe_score":100,"tags":{"MINOR_VERSION":"512","COMPATIBLE_BRANDS":"isomiso2avc1mp41","MAJOR_BRAND":"isom","ENCODER":"Lavf60.16.100"}}},"meta":{"SourceFile":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","errors":[],"tz":"UTC","tzSource":"defaultVideosToUTC","Duration":26.911,"ExifToolVersion":12.6,"FileName":"anon_8tuixk.mkv","Directory":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw","FileSize":"35 MB","FileModifyDate":{"_ctor":"ExifDateTime","year":2025,"month":12,"day":11,"hour":17,"minute":59,"second":18,"tzoffsetMinutes":0,"rawValue":"2025:12:11 17:59:18+00:00","zoneName":"UTC"},"FileAccessDate":{"_ctor":"ExifDateTime","year":2025,"month":12,"day":11,"hour":17,"minute":59,"second":18,"tzoffsetMinutes":0,"rawValue":"2025:12:11 17:59:18+00:00","zoneName":"UTC"},"FileInodeChangeDate":{"_ctor":"ExifDateTime","year":2025,"month":12,"day":11,"hour":17,"minute":59,"second":18,"tzoffsetMinutes":0,"rawValue":"2025:12:11 17:59:18+00:00","zoneName":"UTC"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"Lavf60.16.100","WritingApp":"Lavf60.16.100","VideoFrameRate":30,"ImageWidth":2560,"ImageHeight":4552,"VideoScanType":"Unknown (2)","DisplayWidth":9,"DisplayHeight":16,"DisplayUnit":"Display Aspect Ratio","TrackNumber":2,"TrackUID":"13c5e9dab4160128","TrackLanguage":"eng","CodecID":"A_AAC","TrackType":"Audio","AudioChannels":2,"AudioSampleRate":44100,"AudioBitsPerSample":32,"ImageSize":"2560x4552","Megapixels":11.7},"anon_a70fo9Info":{"@ref":"","track":[{"@type":"General","UniqueID":"97322692514222569943856651574620857489","VideoCount":"1","AudioCount":"1","Format":"Matroska","Format_Version":"4","FileSize":"34801557","Duration":"26.911","OverallBitRate":"10345675","FrameRate":"30.000","FrameCount":"805","StreamSize":"17531","IsStreamable":"Yes","Encoded_Application":"Lavf60.16.100","Encoded_Library":"Lavf60.16.100","extra":{"ErrorDetectionType":"Per level 1"}},{"@type":"Video","StreamOrder":"0","ID":"1","UniqueID":"10047302952169717255","Format":"anon_237h2d","Format_Profile":"High","Format_Level":"6","Format_Settings_CABAC":"Yes","Format_Settings_RefFrames":"4","CodecID":"anon_sebvfp/anon_20rhno/anon_237h2d","Duration":"26.833333333","BitRate":"10240915","Width":"2560","Height":"4552","Stored_Height":"4560","Sampled_Width":"2560","Sampled_Height":"4552","PixelAspectRatio":"1.000","DisplayAspectRatio":"0.562","DisplayAspectRatio_Original":"0.563","FrameRate_Mode":"CFR","FrameRate_Mode_Original":"VFR","FrameRate":"30.000","FrameCount":"805","ColorSpace":"YUV","ChromaSubsampling":"4:2:0","BitDepth":"8","ScanType":"Progressive","Delay":"0.033","Delay_Source":"Container","StreamSize":"34349311","Title":"anon_20rhno Media file produced by Google Inc.","Encoded_Library":"x264 - core 164 r3108 31e19f9","Encoded_Library_Name":"x264","Encoded_Library_Version":"core 164 r3108 31e19f9","Encoded_Library_Settings":"cabac=1 / ref=3 / deblock=1:0:0 / analyse=0x3:0x113 / me=hex / subme=7 / psy=1 / psy_rd=1.00:0.00 / mixed_ref=1 / me_range=16 / chroma_me=1 / trellis=1 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=-2 / threads=15 / lookahead_threads=2 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=3 / b_pyramid=2 / b_adapt=1 / b_bias=0 / direct=1 / weightb=1 / open_gop=0 / weightp=2 / keyint=250 / keyint_min=25 / scenecut=40 / intra_refresh=0 / rc_lookahead=40 / rc=crf / mbtree=1 / crf=23.0 / qcomp=0.60 / qpmin=0 / qpmax=69 / qpstep=4 / ip_ratio=1.40 / aq=1:1.00","Default":"Yes","Forced":"No","colour_description_present":"Yes","colour_description_present_Source":"Container / Stream","colour_range":"Limited","colour_range_Source":"Container / Stream","colour_primaries":"BT.709","colour_primaries_Source":"Container / Stream","transfer_characteristics":"BT.709","transfer_characteristics_Source":"Container / Stream","matrix_coefficients":"BT.709","matrix_coefficients_Source":"Container / Stream","extra":{"VENDOR_ID":"[0][0][0][0]"}},{"@type":"Audio","StreamOrder":"1","ID":"2","UniqueID":"1424801982666113320","Format":"AAC","Format_Settings_SBR":"No (Explicit)","Format_AdditionalFeatures":"LC","CodecID":"A_AAC-2","Duration":"26.888000000","BitRate":"129340","Channels":"2","ChannelPositions":"Front: L R","ChannelLayout":"L R","SamplesPerFrame":"1024","SamplingRate":"44100","SamplingCount":"1185761","FrameRate":"43.066","FrameCount":"1159","Compression_Mode":"Lossy","Delay":"0.000","Delay_Source":"Container","Video_Delay":"-0.033","StreamSize":"434715","Title":"anon_20rhno Media file produced by Google Inc.","Language":"en","Default":"Yes","Forced":"No","extra":{"VENDOR_ID":"[0][0][0][0]"}}]},"hasClosedCaptions":false,"bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"aac","video_resolution":"8KUHD","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0.03241147566586733,"newSize":0,"newVsOldRatio":0,"videoStreamIndex":0,"duration":26}}
+2025-12-11T17:59:23.234Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W02] Loading flow
+2025-12-11T17:59:23.235Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Item from queue, creating flow
+2025-12-11T17:59:23.236Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Creating workDir: "/anon_zssw4o/anon_i2bekc"
+2025-12-11T17:59:23.236Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Found next plugin: bRYxoCc4E::pE6rU7gkW Input File
+2025-12-11T17:59:23.237Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W03] [C1] [Reconvert HEVC Video Flow] Running Community plugin: 1.0.0: inputFile: Input File 
+2025-12-11T17:59:23.237Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:23.238Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:23.238Z   "exifToolScan": true,
+2025-12-11T17:59:23.238Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:23.238Z   "closedCaptionScan": false
+2025-12-11T17:59:23.238Z }
+2025-12-11T17:59:23.238Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:manon_ay8hned node, file is original, no need to download
+2025-12-11T17:59:23.238Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loading source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:23.238Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:23.239Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan types: {
+2025-12-11T17:59:23.239Z   "exifToolScan": true,
+2025-12-11T17:59:23.239Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:23.239Z   "closedCaptionScan": false
+2025-12-11T17:59:23.239Z }
+2025-12-11T17:59:23.239Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning file
+2025-12-11T17:59:23.239Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Updating file properties using mkvpropedit. This may take a long time for large files.
+2025-12-11T17:59:23.239Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Updated file properties using mkvpropedit
+2025-12-11T17:59:23.240Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Node scanning file
+2025-12-11T17:59:24.241Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan complete
+2025-12-11T17:59:24.243Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Source file scan complete
+2025-12-11T17:59:24.245Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loaded plugin inputs: {
+2025-12-11T17:59:24.245Z   "fileAccessChecks": "true",
+2025-12-11T17:59:24.245Z   "pauseNodeIfAccessChecksFail": "true"
+2025-12-11T17:59:24.245Z }
+2025-12-11T17:59:24.246Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Checking file access
+2025-12-11T17:59:24.246Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Checking read access for: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw"
+2025-12-11T17:59:24.247Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Read access OK
+2025-12-11T17:59:24.248Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Checking read access for: "/anon_zssw4o"
+2025-12-11T17:59:24.248Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Read access OK
+2025-12-11T17:59:24.249Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Plugin run complete
+2025-12-11T17:59:24.250Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","outputNumber":1,"variables":{}}
+2025-12-11T17:59:24.251Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Found next plugin: bRYxoCc4E::QwnQZATBQ Check File Extension
+2025-12-11T17:59:24.252Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W03] [C2] [Reconvert HEVC Video Flow] Running Community plugin: 1.0.0: checkFileExtension: Check File Extension 
+2025-12-11T17:59:24.253Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:24.253Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:24.253Z   "exifToolScan": true,
+2025-12-11T17:59:24.253Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:24.253Z   "closedCaptionScan": false
+2025-12-11T17:59:24.253Z }
+2025-12-11T17:59:24.255Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:manon_ay8hned node, file is original, no need to download
+2025-12-11T17:59:24.256Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loading source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:24.258Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:24.259Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan types: {
+2025-12-11T17:59:24.259Z   "exifToolScan": true,
+2025-12-11T17:59:24.259Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:24.259Z   "closedCaptionScan": false
+2025-12-11T17:59:24.259Z }
+2025-12-11T17:59:24.260Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Using cached scan results
+2025-12-11T17:59:24.261Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loaded plugin inputs: {
+2025-12-11T17:59:24.261Z   "extensions": "mkv"
+2025-12-11T17:59:24.261Z }
+2025-12-11T17:59:24.262Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Plugin run complete
+2025-12-11T17:59:24.262Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","outputNumber":1,"variables":{}}
+2025-12-11T17:59:24.263Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Found next plugin: bRYxoCc4E::uFZPdGXIY Check Video Codec
+2025-12-11T17:59:24.264Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W03] [C3] [Reconvert HEVC Video Flow] Running Community plugin: 1.0.0: checkVideoCodec: Check Video Codec 
+2025-12-11T17:59:24.264Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:24.265Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:24.265Z   "exifToolScan": true,
+2025-12-11T17:59:24.265Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:24.265Z   "closedCaptionScan": false
+2025-12-11T17:59:24.265Z }
+2025-12-11T17:59:24.265Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:manon_ay8hned node, file is original, no need to download
+2025-12-11T17:59:24.265Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loading source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:24.265Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:24.266Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan types: {
+2025-12-11T17:59:24.266Z   "exifToolScan": true,
+2025-12-11T17:59:24.266Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:24.266Z   "closedCaptionScan": false
+2025-12-11T17:59:24.266Z }
+2025-12-11T17:59:24.266Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Using cached scan results
+2025-12-11T17:59:24.266Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loaded plugin inputs: {
+2025-12-11T17:59:24.266Z   "codec": "hevc"
+2025-12-11T17:59:24.266Z }
+2025-12-11T17:59:24.266Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Plugin run complete
+2025-12-11T17:59:24.267Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","outputNumber":2,"variables":{}}
+2025-12-11T17:59:24.267Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Found next plugin: bRYxoCc4E::87II7onv3 Image Removal
+2025-12-11T17:59:24.267Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W03] [C4] [Reconvert HEVC Video Flow] Running Community plugin: 2.0.0: runClassicTranscodePlugin: Image Removal 
+2025-12-11T17:59:24.267Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:24.268Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:24.268Z   "exifToolScan": true,
+2025-12-11T17:59:24.268Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:24.268Z   "closedCaptionScan": false
+2025-12-11T17:59:24.268Z }
+2025-12-11T17:59:24.268Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:manon_ay8hned node, file is original, no need to download
+2025-12-11T17:59:24.268Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loading source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:24.268Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:24.269Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan types: {
+2025-12-11T17:59:24.269Z   "exifToolScan": true,
+2025-12-11T17:59:24.269Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:24.269Z   "closedCaptionScan": false
+2025-12-11T17:59:24.269Z }
+2025-12-11T17:59:24.269Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Using cached scan results
+2025-12-11T17:59:24.269Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loaded plugin inputs: {
+2025-12-11T17:59:24.269Z   "pluginSourceId": "Community:Tdarr_Plugin_MC93_MigzImageRemoval"
+2025-12-11T17:59:24.269Z }
+2025-12-11T17:59:24.269Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:No depedencies to install for Community:Tdarr_Plugin_MC93_MigzImageRemoval
+2025-12-11T17:59:24.270Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning files using Node
+2025-12-11T17:59:26.270Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:26.270Z   "processFile": false,
+2025-12-11T17:59:26.270Z   "preset": "",
+2025-12-11T17:59:26.270Z   "handBrakeMode": false,
+2025-12-11T17:59:26.270Z   "container": ".mkv",
+2025-12-11T17:59:26.270Z   "FFmpegMode": true,
+2025-12-11T17:59:26.270Z   "reQueueAfter": true,
+2025-12-11T17:59:26.270Z   "infoLog": "☑File doesn't contain any unwanted image format streams.\n"
+2025-12-11T17:59:26.270Z }
+2025-12-11T17:59:26.274Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:26.274Z   "processFile": false,
+2025-12-11T17:59:26.274Z   "preset": "",
+2025-12-11T17:59:26.274Z   "handBrakeMode": false,
+2025-12-11T17:59:26.274Z   "container": ".mkv",
+2025-12-11T17:59:26.274Z   "FFmpegMode": true,
+2025-12-11T17:59:26.274Z   "reQueueAfter": true,
+2025-12-11T17:59:26.274Z   "infoLog": "☑File doesn't contain any unwanted image format streams.\n",
+2025-12-11T17:59:26.274Z   "ffmpegMode": true,
+2025-12-11T17:59:26.274Z   "cliToUse": "ffmpeg"
+2025-12-11T17:59:26.274Z }
+2025-12-11T17:59:26.279Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Classic plugin does not need to process file. Continuing to next flow plugin.
+2025-12-11T17:59:26.282Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Plugin run complete
+2025-12-11T17:59:26.284Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","outputNumber":2,"variables":{}}
+2025-12-11T17:59:26.289Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Found next plugin: bRYxoCc4E::9-Db1sYsG Has aac codec
+2025-12-11T17:59:26.292Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W03] [C5] [Reconvert HEVC Video Flow] Running Community plugin: 1.0.0: checkAudioCodec: Has aac codec 
+2025-12-11T17:59:26.295Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:26.300Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:26.300Z   "exifToolScan": true,
+2025-12-11T17:59:26.300Z   "anon_a70fo9InfoScan": true,
+2025-12-11T17:59:26.300Z   "closedCaptionScan": false
+2025-12-11T17:59:26.300Z }
+2025-12-11T17:59:26.303Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:manon_ay8hned node, file is original, no need to download
+2025-12-11T17:59:26.306Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loading source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:26.309Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:26.310Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan types: {
+2025-12-11T17:59:26.310Z   "exifToolScan": true,
+2025-12-11T17:59:26.310Z   "anon_a70fo9InfoScan": true,
+2025-12-11T17:59:26.310Z   "closedCaptionScan": false
+2025-12-11T17:59:26.310Z }
+2025-12-11T17:59:26.314Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning file
+2025-12-11T17:59:26.316Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Updating file properties using mkvpropedit. This may take a long time for large files.
+2025-12-11T17:59:26.319Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Updated file properties using mkvpropedit
+2025-12-11T17:59:26.319Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Node scanning file
+2025-12-11T17:59:28.651Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan complete
+2025-12-11T17:59:28.652Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Source file scan complete
+2025-12-11T17:59:28.653Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:fileVfileVersionLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","DB":"vUgS7F5Gp","footprintId":"xBIiDTLZtA","file":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","fileNameWithoutExtension":"trailer","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","anon_a70fo9InfoRead":"success","closedCaptionRead":"not enabled"},"createdAt":1765475965946,"lastPluginDetails":"none","bit_rate":10345674,"statSync":{"dev":96,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":131072,"ino":88173,"size":34801557,"blocks":55615,"atimeMs":1765475964150.4531,"mtimeMs":1765475964108.4531,"ctimeMs":1765475964108.4531,"birthtimeMs":1765336566300.953,"atime":"2025-12-11T17:59:24.150Z","mtime":"2025-12-11T17:59:24.108Z","ctime":"2025-12-11T17:59:24.108Z","birthtime":"2025-12-10T03:16:06.301Z"},"file_size":33.189351081848145,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / anon_237h2d / MPEG-4 anon_237h2d / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":2560,"height":4552,"coded_width":2560,"coded_height":4552,"closed_captions":0,"film_grain":0,"has_b_frames":2,"sample_aspect_ratio":"5121:5120","display_aspect_ratio":"9:16","pix_fmt":"yuv420p","level":60,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"30/1","avg_frame_rate":"30/1","time_base":"1/1000","start_pts":33,"start_time":"0.033000","bits_per_raw_sample":"8","extradata_size":56,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","ENCODER":"Lavc60.3.100 libx264","BPS":"10240915","DURATION":"00:00:26.833333333","NUMBER_OF_FRAMES":"805","NUMBER_OF_BYTES":"34349311","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:24","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"44100","channels":2,"channel_layout":"stereo","bits_per_sample":0,"initial_padding":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","extradata_size":5,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"language":"eng","HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","BPS":"129340","DURATION":"00:00:26.888000000","NUMBER_OF_FRAMES":"1159","NUMBER_OF_BYTES":"434715","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:24","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}}],"format":{"filename":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","nb_streams":2,"nb_programs":0,"nb_stream_groups":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"26.911000","size":"34801557","bit_rate":"10345674","probe_score":100,"tags":{"MINOR_VERSION":"512","COMPATIBLE_BRANDS":"isomiso2avc1mp41","MAJOR_BRAND":"isom","ENCODER":"Lavf60.16.100"}}},"meta":{"SourceFile":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","errors":[],"tz":"UTC","tzSource":"defaultVideosToUTC","Duration":26.911,"ExifToolVersion":12.6,"FileName":"anon_8tuixk.mkv","Directory":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw","FileSize":"35 MB","FileModifyDate":{"_ctor":"ExifDateTime","year":2025,"month":12,"day":11,"hour":17,"minute":59,"second":24,"tzoffsetMinutes":0,"rawValue":"2025:12:11 17:59:24+00:00","zoneName":"UTC"},"FileAccessDate":{"_ctor":"ExifDateTime","year":2025,"month":12,"day":11,"hour":17,"minute":59,"second":24,"tzoffsetMinutes":0,"rawValue":"2025:12:11 17:59:24+00:00","zoneName":"UTC"},"FileInodeChangeDate":{"_ctor":"ExifDateTime","year":2025,"month":12,"day":11,"hour":17,"minute":59,"second":24,"tzoffsetMinutes":0,"rawValue":"2025:12:11 17:59:24+00:00","zoneName":"UTC"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"Lavf60.16.100","WritingApp":"Lavf60.16.100","VideoFrameRate":30,"ImageWidth":2560,"ImageHeight":4552,"VideoScanType":"Unknown (2)","DisplayWidth":9,"DisplayHeight":16,"DisplayUnit":"Display Aspect Ratio","TrackNumber":2,"TrackUID":"13c5e9dab4160128","TrackLanguage":"eng","CodecID":"A_AAC","TrackType":"Audio","AudioChannels":2,"AudioSampleRate":44100,"AudioBitsPerSample":32,"ImageSize":"2560x4552","Megapixels":11.7},"anon_a70fo9Info":{"@ref":"","track":[{"@type":"General","UniqueID":"97322692514222569943856651574620857489","VideoCount":"1","AudioCount":"1","Format":"Matroska","Format_Version":"4","FileSize":"34801557","Duration":"26.911","OverallBitRate":"10345675","FrameRate":"30.000","FrameCount":"805","StreamSize":"17531","IsStreamable":"Yes","Encoded_Application":"Lavf60.16.100","Encoded_Library":"Lavf60.16.100","extra":{"ErrorDetectionType":"Per level 1"}},{"@type":"Video","StreamOrder":"0","ID":"1","UniqueID":"10047302952169717255","Format":"anon_237h2d","Format_Profile":"High","Format_Level":"6","Format_Settings_CABAC":"Yes","Format_Settings_RefFrames":"4","CodecID":"anon_sebvfp/anon_20rhno/anon_237h2d","Duration":"26.833333333","BitRate":"10240915","Width":"2560","Height":"4552","Stored_Height":"4560","Sampled_Width":"2560","Sampled_Height":"4552","PixelAspectRatio":"1.000","DisplayAspectRatio":"0.562","DisplayAspectRatio_Original":"0.563","FrameRate_Mode":"CFR","FrameRate_Mode_Original":"VFR","FrameRate":"30.000","FrameCount":"805","ColorSpace":"YUV","ChromaSubsampling":"4:2:0","BitDepth":"8","ScanType":"Progressive","Delay":"0.033","Delay_Source":"Container","StreamSize":"34349311","Title":"anon_20rhno Media file produced by Google Inc.","Encoded_Library":"x264 - core 164 r3108 31e19f9","Encoded_Library_Name":"x264","Encoded_Library_Version":"core 164 r3108 31e19f9","Encoded_Library_Settings":"cabac=1 / ref=3 / deblock=1:0:0 / analyse=0x3:0x113 / me=hex / subme=7 / psy=1 / psy_rd=1.00:0.00 / mixed_ref=1 / me_range=16 / chroma_me=1 / trellis=1 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=-2 / threads=15 / lookahead_threads=2 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=3 / b_pyramid=2 / b_adapt=1 / b_bias=0 / direct=1 / weightb=1 / open_gop=0 / weightp=2 / keyint=250 / keyint_min=25 / scenecut=40 / intra_refresh=0 / rc_lookahead=40 / rc=crf / mbtree=1 / crf=23.0 / qcomp=0.60 / qpmin=0 / qpmax=69 / qpstep=4 / ip_ratio=1.40 / aq=1:1.00","Default":"Yes","Forced":"No","colour_description_present":"Yes","colour_description_present_Source":"Container / Stream","colour_range":"Limited","colour_range_Source":"Container / Stream","colour_primaries":"BT.709","colour_primaries_Source":"Container / Stream","transfer_characteristics":"BT.709","transfer_characteristics_Source":"Container / Stream","matrix_coefficients":"BT.709","matrix_coefficients_Source":"Container / Stream","extra":{"VENDOR_ID":"[0][0][0][0]"}},{"@type":"Audio","StreamOrder":"1","ID":"2","UniqueID":"1424801982666113320","Format":"AAC","Format_Settings_SBR":"No (Explicit)","Format_AdditionalFeatures":"LC","CodecID":"A_AAC-2","Duration":"26.888000000","BitRate":"129340","Channels":"2","ChannelPositions":"Front: L R","ChannelLayout":"L R","SamplesPerFrame":"1024","SamplingRate":"44100","SamplingCount":"1185761","FrameRate":"43.066","FrameCount":"1159","Compression_Mode":"Lossy","Delay":"0.000","Delay_Source":"Container","Video_Delay":"-0.033","StreamSize":"434715","Title":"anon_20rhno Media file produced by Google Inc.","Language":"en","Default":"Yes","Forced":"No","extra":{"VENDOR_ID":"[0][0][0][0]"}}]},"hasClosedCaptions":false,"bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"aac","video_resolution":"8KUHD","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0.03241147566586733,"newSize":0,"newVsOldRatio":0,"videoStreamIndex":0,"duration":26}}
+2025-12-11T17:59:28.654Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loaded plugin inputs: {
+2025-12-11T17:59:28.654Z   "codec": "aac",
+2025-12-11T17:59:28.654Z   "checkBitrate": "false",
+2025-12-11T17:59:28.654Z   "greaterThan": "50000",
+2025-12-11T17:59:28.654Z   "lessThan": "1000000"
+2025-12-11T17:59:28.654Z }
+2025-12-11T17:59:28.655Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:File has codec: aac
+2025-12-11T17:59:28.655Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Plugin run complete
+2025-12-11T17:59:28.656Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","outputNumber":1,"variables":{}}
+2025-12-11T17:59:28.656Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Found next plugin: bRYxoCc4E::4Swd6qzvc Start
+2025-12-11T17:59:28.657Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W03] [C6] [Reconvert HEVC Video Flow] Running Community plugin: 1.0.0: ffmpegCommandStart: Start 
+2025-12-11T17:59:28.657Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:28.658Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:28.658Z   "exifToolScan": true,
+2025-12-11T17:59:28.658Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:28.658Z   "closedCaptionScan": false
+2025-12-11T17:59:28.658Z }
+2025-12-11T17:59:28.659Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:manon_ay8hned node, file is original, no need to download
+2025-12-11T17:59:28.660Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loading source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:28.660Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:28.661Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan types: {
+2025-12-11T17:59:28.661Z   "exifToolScan": true,
+2025-12-11T17:59:28.661Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:28.661Z   "closedCaptionScan": false
+2025-12-11T17:59:28.661Z }
+2025-12-11T17:59:28.662Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning file
+2025-12-11T17:59:28.662Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Updating file properties using mkvpropedit. This may take a long time for large files.
+2025-12-11T17:59:28.663Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Updated file properties using mkvpropedit
+2025-12-11T17:59:28.663Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Node scanning file
+2025-12-11T17:59:29.665Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan complete
+2025-12-11T17:59:29.667Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Source file scan complete
+2025-12-11T17:59:29.668Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:fileVfileVersionLogJSONString:{"lastCliCommand":"","lastPluginId":"","sourceFile":{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","DB":"vUgS7F5Gp","footprintId":"xBIiDTLZtA","file":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","fileNameWithoutExtension":"trailer","container":"mkv","scannerReads":{"ffProbeRead":"success","exiftoolRead":"success","anon_a70fo9InfoRead":"not enabled","closedCaptionRead":"not enabled"},"createdAt":1765475967250,"lastPluginDetails":"none","bit_rate":10345674,"statSync":{"dev":96,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":131072,"ino":88173,"size":34801557,"blocks":55615,"atimeMs":1765475966433.4563,"mtimeMs":1765475966397.4563,"ctimeMs":1765475966397.4563,"birthtimeMs":1765336566300.953,"atime":"2025-12-11T17:59:26.433Z","mtime":"2025-12-11T17:59:26.397Z","ctime":"2025-12-11T17:59:26.397Z","birthtime":"2025-12-10T03:16:06.301Z"},"file_size":33.189351081848145,"ffProbeData":{"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / anon_237h2d / MPEG-4 anon_237h2d / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":2560,"height":4552,"coded_width":2560,"coded_height":4552,"closed_captions":0,"film_grain":0,"has_b_frames":2,"sample_aspect_ratio":"5121:5120","display_aspect_ratio":"9:16","pix_fmt":"yuv420p","level":60,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"30/1","avg_frame_rate":"30/1","time_base":"1/1000","start_pts":33,"start_time":"0.033000","bits_per_raw_sample":"8","extradata_size":56,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","ENCODER":"Lavc60.3.100 libx264","BPS":"10240915","DURATION":"00:00:26.833333333","NUMBER_OF_FRAMES":"805","NUMBER_OF_BYTES":"34349311","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"44100","channels":2,"channel_layout":"stereo","bits_per_sample":0,"initial_padding":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","extradata_size":5,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"language":"eng","HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","BPS":"129340","DURATION":"00:00:26.888000000","NUMBER_OF_FRAMES":"1159","NUMBER_OF_BYTES":"434715","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"}}],"format":{"filename":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","nb_streams":2,"nb_programs":0,"nb_stream_groups":0,"format_name":"matroska,webm","format_long_name":"Matroska / WebM","start_time":"0.000000","duration":"26.911000","size":"34801557","bit_rate":"10345674","probe_score":100,"tags":{"MINOR_VERSION":"512","COMPATIBLE_BRANDS":"isomiso2avc1mp41","MAJOR_BRAND":"isom","ENCODER":"Lavf60.16.100"}}},"meta":{"SourceFile":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","errors":[],"tz":"UTC","tzSource":"defaultVideosToUTC","Duration":26.911,"ExifToolVersion":12.6,"FileName":"anon_8tuixk.mkv","Directory":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw","FileSize":"35 MB","FileModifyDate":{"_ctor":"ExifDateTime","year":2025,"month":12,"day":11,"hour":17,"minute":59,"second":26,"tzoffsetMinutes":0,"rawValue":"2025:12:11 17:59:26+00:00","zoneName":"UTC"},"FileAccessDate":{"_ctor":"ExifDateTime","year":2025,"month":12,"day":11,"hour":17,"minute":59,"second":26,"tzoffsetMinutes":0,"rawValue":"2025:12:11 17:59:26+00:00","zoneName":"UTC"},"FileInodeChangeDate":{"_ctor":"ExifDateTime","year":2025,"month":12,"day":11,"hour":17,"minute":59,"second":26,"tzoffsetMinutes":0,"rawValue":"2025:12:11 17:59:26+00:00","zoneName":"UTC"},"FilePermissions":"-rw-rw-r--","FileType":"MKV","FileTypeExtension":"mkv","MIMEType":"video/x-matroska","EBMLVersion":1,"EBMLReadVersion":1,"DocType":"matroska","DocTypeVersion":4,"DocTypeReadVersion":2,"TimecodeScale":"1 ms","MuxingApp":"Lavf60.16.100","WritingApp":"Lavf60.16.100","VideoFrameRate":30,"ImageWidth":2560,"ImageHeight":4552,"VideoScanType":"Unknown (2)","DisplayWidth":9,"DisplayHeight":16,"DisplayUnit":"Display Aspect Ratio","TrackNumber":2,"TrackUID":"13c5e9dab4160128","TrackLanguage":"eng","CodecID":"A_AAC","TrackType":"Audio","AudioChannels":2,"AudioSampleRate":44100,"AudioBitsPerSample":32,"ImageSize":"2560x4552","Megapixels":11.7},"anon_a70fo9Info":{},"hasClosedCaptions":false,"bumped":false,"HealthCheck":"","TranscodeDecisionMaker":"","holdUntil":0,"fileMedium":"video","video_codec_name":"h264","audio_codec_name":"aac","video_resolution":"8KUHD","lastHealthCheckDate":0,"lastTranscodeDate":0,"history":"","oldSize":0.03241147566586733,"newSize":0,"newVsOldRatio":0,"videoStreamIndex":0,"duration":26}}
+2025-12-11T17:59:29.668Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loaded plugin inputs: {}
+2025-12-11T17:59:29.669Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Plugin run complete
+2025-12-11T17:59:29.669Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","outputNumber":1,"variables":{"ffmpegCommand":{"init":true,"inputFiles":[],"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / anon_237h2d / MPEG-4 anon_237h2d / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":2560,"height":4552,"coded_width":2560,"coded_height":4552,"closed_captions":0,"film_grain":0,"has_b_frames":2,"sample_aspect_ratio":"5121:5120","display_aspect_ratio":"9:16","pix_fmt":"yuv420p","level":60,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"30/1","avg_frame_rate":"30/1","time_base":"1/1000","start_pts":33,"start_time":"0.033000","bits_per_raw_sample":"8","extradata_size":56,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","ENCODER":"Lavc60.3.100 libx264","BPS":"10240915","DURATION":"00:00:26.833333333","NUMBER_OF_FRAMES":"805","NUMBER_OF_BYTES":"34349311","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"},"removed":false,"mapArgs":["-map","0:0"],"inputArgs":[],"outputArgs":[]},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"44100","channels":2,"channel_layout":"stereo","bits_per_sample":0,"initial_padding":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","extradata_size":5,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"language":"eng","HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","BPS":"129340","DURATION":"00:00:26.888000000","NUMBER_OF_FRAMES":"1159","NUMBER_OF_BYTES":"434715","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"},"removed":false,"mapArgs":["-map","0:1"],"inputArgs":[],"outputArgs":[]}],"container":"mkv","hardwareDecoding":false,"shouldProcess":false,"overallInputArguments":[],"overallOuputArguments":[]}}}
+2025-12-11T17:59:29.670Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Found next plugin: bRYxoCc4E::8B_6pRd_U Set Video Encoder
+2025-12-11T17:59:29.671Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W03] [C7] [Reconvert HEVC Video Flow] Running Community plugin: 1.0.0: ffmpegCommandSetVideoEncoder: Set Video Encoder 
+2025-12-11T17:59:30.672Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:30.673Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:30.673Z   "exifToolScan": true,
+2025-12-11T17:59:30.673Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:30.673Z   "closedCaptionScan": false
+2025-12-11T17:59:30.673Z }
+2025-12-11T17:59:30.674Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:manon_ay8hned node, file is original, no need to download
+2025-12-11T17:59:30.675Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loading source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:30.676Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:30.677Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan types: {
+2025-12-11T17:59:30.677Z   "exifToolScan": true,
+2025-12-11T17:59:30.677Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:30.677Z   "closedCaptionScan": false
+2025-12-11T17:59:30.677Z }
+2025-12-11T17:59:30.677Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Using cached scan results
+2025-12-11T17:59:30.677Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loaded plugin inputs: {
+2025-12-11T17:59:30.677Z   "outputCodec": "hevc",
+2025-12-11T17:59:30.677Z   "ffmpegPresetEnabled": "true",
+2025-12-11T17:59:30.677Z   "ffmpegPreset": "veryslow",
+2025-12-11T17:59:30.677Z   "ffmpegQualityEnabled": "true",
+2025-12-11T17:59:30.677Z   "ffmpegQuality": "22",
+2025-12-11T17:59:30.677Z   "hardwareEncoding": "true",
+2025-12-11T17:59:30.677Z   "hardwareType": "qsv",
+2025-12-11T17:59:30.677Z   "hardwareDecoding": "true",
+2025-12-11T17:59:30.677Z   "forceEncoding": "true"
+2025-12-11T17:59:30.677Z }
+2025-12-11T17:59:30.678Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Plugin run complete
+2025-12-11T17:59:30.678Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","outputNumber":1,"variables":{"ffmpegCommand":{"init":true,"inputFiles":[],"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / anon_237h2d / MPEG-4 anon_237h2d / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":2560,"height":4552,"coded_width":2560,"coded_height":4552,"closed_captions":0,"film_grain":0,"has_b_frames":2,"sample_aspect_ratio":"5121:5120","display_aspect_ratio":"9:16","pix_fmt":"yuv420p","level":60,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"30/1","avg_frame_rate":"30/1","time_base":"1/1000","start_pts":33,"start_time":"0.033000","bits_per_raw_sample":"8","extradata_size":56,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","ENCODER":"Lavc60.3.100 libx264","BPS":"10240915","DURATION":"00:00:26.833333333","NUMBER_OF_FRAMES":"805","NUMBER_OF_BYTES":"34349311","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"},"removed":false,"mapArgs":["-map","0:0"],"inputArgs":["-hwaccel","qsv"],"outputArgs":["-c:{outputIndex}","hevc_qsv","-global_quality","22","-preset","veryslow"]},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"44100","channels":2,"channel_layout":"stereo","bits_per_sample":0,"initial_padding":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","extradata_size":5,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"language":"eng","HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","BPS":"129340","DURATION":"00:00:26.888000000","NUMBER_OF_FRAMES":"1159","NUMBER_OF_BYTES":"434715","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"},"removed":false,"mapArgs":["-map","0:1"],"inputArgs":[],"outputArgs":[]}],"container":"mkv","hardwareDecoding":true,"shouldProcess":true,"overallInputArguments":[],"overallOuputArguments":[]}}}
+2025-12-11T17:59:30.678Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Found next plugin: bRYxoCc4E::x7vlRKWDm Check Video Resolution
+2025-12-11T17:59:30.679Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W03] [C8] [Reconvert HEVC Video Flow] Running Community plugin: 1.0.0: checkVideoResolution: Check Video Resolution 
+2025-12-11T17:59:30.679Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:30.679Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:30.679Z   "exifToolScan": true,
+2025-12-11T17:59:30.679Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:30.679Z   "closedCaptionScan": false
+2025-12-11T17:59:30.679Z }
+2025-12-11T17:59:30.680Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:manon_ay8hned node, file is original, no need to download
+2025-12-11T17:59:30.680Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loading source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:30.680Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:30.680Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan types: {
+2025-12-11T17:59:30.680Z   "exifToolScan": true,
+2025-12-11T17:59:30.680Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:30.680Z   "closedCaptionScan": false
+2025-12-11T17:59:30.680Z }
+2025-12-11T17:59:30.681Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Using cached scan results
+2025-12-11T17:59:30.681Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loaded plugin inputs: {}
+2025-12-11T17:59:30.681Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Plugin run complete
+2025-12-11T17:59:30.682Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","outputNumber":8,"variables":{"ffmpegCommand":{"init":true,"inputFiles":[],"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / anon_237h2d / MPEG-4 anon_237h2d / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":2560,"height":4552,"coded_width":2560,"coded_height":4552,"closed_captions":0,"film_grain":0,"has_b_frames":2,"sample_aspect_ratio":"5121:5120","display_aspect_ratio":"9:16","pix_fmt":"yuv420p","level":60,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"30/1","avg_frame_rate":"30/1","time_base":"1/1000","start_pts":33,"start_time":"0.033000","bits_per_raw_sample":"8","extradata_size":56,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","ENCODER":"Lavc60.3.100 libx264","BPS":"10240915","DURATION":"00:00:26.833333333","NUMBER_OF_FRAMES":"805","NUMBER_OF_BYTES":"34349311","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"},"removed":false,"mapArgs":["-map","0:0"],"inputArgs":["-hwaccel","qsv"],"outputArgs":["-c:{outputIndex}","hevc_qsv","-global_quality","22","-preset","veryslow"]},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"44100","channels":2,"channel_layout":"stereo","bits_per_sample":0,"initial_padding":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","extradata_size":5,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"language":"eng","HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","BPS":"129340","DURATION":"00:00:26.888000000","NUMBER_OF_FRAMES":"1159","NUMBER_OF_BYTES":"434715","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"},"removed":false,"mapArgs":["-map","0:1"],"inputArgs":[],"outputArgs":[]}],"container":"mkv","hardwareDecoding":true,"shouldProcess":true,"overallInputArguments":[],"overallOuputArguments":[]}}}
+2025-12-11T17:59:30.682Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Found next plugin: bRYxoCc4E::zda-8Htf9 Set Video Resolution
+2025-12-11T17:59:30.682Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W03] [C9] [Reconvert HEVC Video Flow] Running Community plugin: 1.0.0: ffmpegCommandSetVdeoResolution: Set Video Resolution 
+2025-12-11T17:59:30.682Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:30.683Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:30.683Z   "exifToolScan": true,
+2025-12-11T17:59:30.683Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:30.683Z   "closedCaptionScan": false
+2025-12-11T17:59:30.683Z }
+2025-12-11T17:59:30.683Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:manon_ay8hned node, file is original, no need to download
+2025-12-11T17:59:30.683Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loading source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:30.684Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:30.684Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan types: {
+2025-12-11T17:59:30.684Z   "exifToolScan": true,
+2025-12-11T17:59:30.684Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:30.684Z   "closedCaptionScan": false
+2025-12-11T17:59:30.684Z }
+2025-12-11T17:59:30.684Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Using cached scan results
+2025-12-11T17:59:30.684Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loaded plugin inputs: {
+2025-12-11T17:59:30.684Z   "targetResolution": "1440p"
+2025-12-11T17:59:30.684Z }
+2025-12-11T17:59:30.685Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Plugin run complete
+2025-12-11T17:59:30.685Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","outputNumber":1,"variables":{"ffmpegCommand":{"init":true,"inputFiles":[],"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / anon_237h2d / MPEG-4 anon_237h2d / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":2560,"height":4552,"coded_width":2560,"coded_height":4552,"closed_captions":0,"film_grain":0,"has_b_frames":2,"sample_aspect_ratio":"5121:5120","display_aspect_ratio":"9:16","pix_fmt":"yuv420p","level":60,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"30/1","avg_frame_rate":"30/1","time_base":"1/1000","start_pts":33,"start_time":"0.033000","bits_per_raw_sample":"8","extradata_size":56,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","ENCODER":"Lavc60.3.100 libx264","BPS":"10240915","DURATION":"00:00:26.833333333","NUMBER_OF_FRAMES":"805","NUMBER_OF_BYTES":"34349311","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"},"removed":false,"mapArgs":["-map","0:0"],"inputArgs":["-hwaccel","qsv"],"outputArgs":["-c:{outputIndex}","hevc_qsv","-global_quality","22","-preset","veryslow","-vf","scale=2560:-2"]},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"44100","channels":2,"channel_layout":"stereo","bits_per_sample":0,"initial_padding":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","extradata_size":5,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"language":"eng","HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","BPS":"129340","DURATION":"00:00:26.888000000","NUMBER_OF_FRAMES":"1159","NUMBER_OF_BYTES":"434715","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"},"removed":false,"mapArgs":["-map","0:1"],"inputArgs":[],"outputArgs":[]}],"container":"mkv","hardwareDecoding":true,"shouldProcess":true,"overallInputArguments":[],"overallOuputArguments":[]}}}
+2025-12-11T17:59:30.685Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Found next plugin: bRYxoCc4E::_n3TnZilH Reorder Streams
+2025-12-11T17:59:30.686Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W03] [C10] [Reconvert HEVC Video Flow] Running Community plugin: 1.0.0: ffmpegCommandRorderStreams: Reorder Streams 
+2025-12-11T17:59:30.686Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:30.686Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:30.686Z   "exifToolScan": true,
+2025-12-11T17:59:30.686Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:30.686Z   "closedCaptionScan": false
+2025-12-11T17:59:30.686Z }
+2025-12-11T17:59:30.687Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:manon_ay8hned node, file is original, no need to download
+2025-12-11T17:59:30.687Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loading source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:30.687Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:30.687Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan types: {
+2025-12-11T17:59:30.687Z   "exifToolScan": true,
+2025-12-11T17:59:30.687Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:30.687Z   "closedCaptionScan": false
+2025-12-11T17:59:30.687Z }
+2025-12-11T17:59:30.688Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Using cached scan results
+2025-12-11T17:59:30.688Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loaded plugin inputs: {
+2025-12-11T17:59:30.688Z   "processOrder": "codecs,channels,languages,streamTypes",
+2025-12-11T17:59:30.688Z   "languages": "",
+2025-12-11T17:59:30.688Z   "channels": "7.1,5.1,2,1",
+2025-12-11T17:59:30.688Z   "codecs": "",
+2025-12-11T17:59:30.688Z   "streamTypes": "video,audio,subtitle"
+2025-12-11T17:59:30.688Z }
+2025-12-11T17:59:30.688Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Plugin run complete
+2025-12-11T17:59:30.688Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","outputNumber":1,"variables":{"ffmpegCommand":{"init":true,"inputFiles":[],"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / anon_237h2d / MPEG-4 anon_237h2d / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":2560,"height":4552,"coded_width":2560,"coded_height":4552,"closed_captions":0,"film_grain":0,"has_b_frames":2,"sample_aspect_ratio":"5121:5120","display_aspect_ratio":"9:16","pix_fmt":"yuv420p","level":60,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"30/1","avg_frame_rate":"30/1","time_base":"1/1000","start_pts":33,"start_time":"0.033000","bits_per_raw_sample":"8","extradata_size":56,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","ENCODER":"Lavc60.3.100 libx264","BPS":"10240915","DURATION":"00:00:26.833333333","NUMBER_OF_FRAMES":"805","NUMBER_OF_BYTES":"34349311","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"},"removed":false,"mapArgs":["-map","0:0"],"inputArgs":["-hwaccel","qsv"],"outputArgs":["-c:{outputIndex}","hevc_qsv","-global_quality","22","-preset","veryslow","-vf","scale=2560:-2"]},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"44100","channels":2,"channel_layout":"stereo","bits_per_sample":0,"initial_padding":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","extradata_size":5,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"language":"eng","HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","BPS":"129340","DURATION":"00:00:26.888000000","NUMBER_OF_FRAMES":"1159","NUMBER_OF_BYTES":"434715","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"},"removed":false,"mapArgs":["-map","0:1"],"inputArgs":[],"outputArgs":[]}],"container":"mkv","hardwareDecoding":true,"shouldProcess":true,"overallInputArguments":[],"overallOuputArguments":[]}}}
+2025-12-11T17:59:30.689Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Found next plugin: bRYxoCc4E::TtKXi3Q7h Set Container
+2025-12-11T17:59:30.689Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W03] [C11] [Reconvert HEVC Video Flow] Running Community plugin: 1.0.0: ffmpegCommandSetContainer: Set Container 
+2025-12-11T17:59:30.689Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:30.689Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:30.689Z   "exifToolScan": true,
+2025-12-11T17:59:30.689Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:30.689Z   "closedCaptionScan": false
+2025-12-11T17:59:30.689Z }
+2025-12-11T17:59:30.690Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:manon_ay8hned node, file is original, no need to download
+2025-12-11T17:59:30.690Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loading source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:30.690Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:30.690Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan types: {
+2025-12-11T17:59:30.690Z   "exifToolScan": true,
+2025-12-11T17:59:30.690Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:30.690Z   "closedCaptionScan": false
+2025-12-11T17:59:30.690Z }
+2025-12-11T17:59:30.691Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Using cached scan results
+2025-12-11T17:59:30.691Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loaded plugin inputs: {
+2025-12-11T17:59:30.691Z   "container": "mkv",
+2025-12-11T17:59:30.691Z   "forceConform": "true"
+2025-12-11T17:59:30.691Z }
+2025-12-11T17:59:30.691Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Plugin run complete
+2025-12-11T17:59:30.692Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"_id":"/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","outputNumber":1,"variables":{"ffmpegCommand":{"init":true,"inputFiles":[],"streams":[{"index":0,"codec_name":"h264","codec_long_name":"H.264 / anon_237h2d / MPEG-4 anon_237h2d / MPEG-4 part 10","profile":"High","codec_type":"video","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","width":2560,"height":4552,"coded_width":2560,"coded_height":4552,"closed_captions":0,"film_grain":0,"has_b_frames":2,"sample_aspect_ratio":"5121:5120","display_aspect_ratio":"9:16","pix_fmt":"yuv420p","level":60,"color_range":"tv","color_space":"bt709","color_transfer":"bt709","color_primaries":"bt709","chroma_location":"left","field_order":"progressive","refs":1,"is_avc":"true","nal_length_size":"4","r_frame_rate":"30/1","avg_frame_rate":"30/1","time_base":"1/1000","start_pts":33,"start_time":"0.033000","bits_per_raw_sample":"8","extradata_size":56,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","ENCODER":"Lavc60.3.100 libx264","BPS":"10240915","DURATION":"00:00:26.833333333","NUMBER_OF_FRAMES":"805","NUMBER_OF_BYTES":"34349311","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"},"removed":false,"mapArgs":["-map","0:0"],"inputArgs":["-hwaccel","qsv"],"outputArgs":["-c:{outputIndex}","hevc_qsv","-global_quality","22","-preset","veryslow","-vf","scale=2560:-2"]},{"index":1,"codec_name":"aac","codec_long_name":"AAC (Advanced Audio Coding)","profile":"LC","codec_type":"audio","codec_tag_string":"[0][0][0][0]","codec_tag":"0x0000","sample_fmt":"fltp","sample_rate":"44100","channels":2,"channel_layout":"stereo","bits_per_sample":0,"initial_padding":0,"r_frame_rate":"0/0","avg_frame_rate":"0/0","time_base":"1/1000","start_pts":0,"start_time":"0.000000","extradata_size":5,"disposition":{"default":1,"dub":0,"original":0,"comment":0,"lyrics":0,"karaoke":0,"forced":0,"hearing_impaired":0,"visual_impaired":0,"clean_effects":0,"attached_pic":0,"timed_thumbnails":0,"non_diegetic":0,"captions":0,"descriptions":0,"metadata":0,"dependent":0,"still_image":0,"multilayer":0},"tags":{"language":"eng","HANDLER_NAME":"anon_20rhno Media file produced by Google Inc.","VENDOR_ID":"[0][0][0][0]","BPS":"129340","DURATION":"00:00:26.888000000","NUMBER_OF_FRAMES":"1159","NUMBER_OF_BYTES":"434715","_STATISTICS_WRITING_APP":"mkvpropedit v95.0 ('Goodbye Stranger') 64-bit","_STATISTICS_WRITING_DATE_UTC":"2025-12-11 17:59:26","_STATISTICS_TAGS":"BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES"},"removed":false,"mapArgs":["-map","0:1"],"inputArgs":[],"outputArgs":[]}],"container":"mkv","hardwareDecoding":true,"shouldProcess":true,"overallInputArguments":[],"overallOuputArguments":[]}}}
+2025-12-11T17:59:30.692Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Found next plugin: bRYxoCc4E::450g167D8 Execute
+2025-12-11T17:59:30.693Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W03] [C12] [Reconvert HEVC Video Flow] Running Community plugin: 1.0.0: ffmpegCommandExecute: Execute 
+2025-12-11T17:59:30.693Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning original library file
+2025-12-11T17:59:30.693Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{
+2025-12-11T17:59:30.693Z   "exifToolScan": true,
+2025-12-11T17:59:30.693Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:30.693Z   "closedCaptionScan": false
+2025-12-11T17:59:30.693Z }
+2025-12-11T17:59:30.694Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:manon_ay8hned node, file is original, no need to download
+2025-12-11T17:59:30.694Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loading source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:30.694Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scanning source file: "/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv"
+2025-12-11T17:59:30.694Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Scan types: {
+2025-12-11T17:59:30.694Z   "exifToolScan": true,
+2025-12-11T17:59:30.694Z   "anon_a70fo9InfoScan": false,
+2025-12-11T17:59:30.694Z   "closedCaptionScan": false
+2025-12-11T17:59:30.694Z }
+2025-12-11T17:59:30.695Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Using cached scan results
+2025-12-11T17:59:30.695Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Loaded plugin inputs: {}
+2025-12-11T17:59:30.695Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Processing file
+2025-12-11T17:59:30.695Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:{"spawnArgs":["-y","-hwaccel","qsv","-i","/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv","-map","0:0","-c:0","hevc_qsv","-global_quality","22","-preset","veryslow","-vf","scale=2560:-2","-map","0:1","-c:1","copy","/anon_zssw4o/anon_i2bekc/1765475968009/anon_8tuixk.mkv"],"outputFilePath":"/anon_zssw4o/anon_i2bekc/1765475968009/anon_8tuixk.mkv"}
+2025-12-11T17:59:30.695Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Running tdarr-ffmpeg -y -hwaccel qsv -i /anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv -map 0:0 -c:0 hevc_qsv -global_quality 22 -preset veryslow -vf scale=2560:-2 -map 0:1 -c:1 copy /anon_zssw4o/anon_i2bekc/1765475968009/anon_8tuixk.mkv
+2025-12-11T17:59:31.889Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:CLI error code: 69
+2025-12-11T17:59:31.901Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:ffmpeg version 6.0.1-Jellyfin Copyright (c) 2000-2023 the FFmpeg developers
+2025-12-11T17:59:31.901Z   built with gcc 13 (Ubuntu 13.2.0-23ubuntu4)
+2025-12-11T17:59:31.901Z   configuration: --prefix=/usr/lib/jellyfin-ffmpeg --target-os=linux --extra-version=Jellyfin --disable-doc --disable-ffplay --disable-ptx-compression --disable-static --disable-libxcb --disable-sdl2 --disable-xlib --enable-lto --enable-gpl --enable-version3 --enable-shared --enable-gmp --enable-gnutls --enable-chromaprint --enable-opencl --enable-libdrm --enable-libxml2 --enable-libass --enable-libfreetype --enable-libfribidi --enable-libfontconfig --enable-libbluray --enable-libmp3lame --enable-libopus --enable-libtheora --enable-libvorbis --enable-libopenmpt --enable-libdav1d --enable-libsvtav1 --enable-libwebp --enable-libvpx --enable-libx264 --enable-libx265 --enable-libzvbi --enable-libzimg --enable-libfdk-aac --arch=amd64 --enable-libshaderc --enable-libplacebo --enable-vulkan --enable-vaapi --enable-amf --enable-libvpl --enable-ffnvcodec --enable-cuda --enable-cuda-llvm --enable-cuvid --enable-nvdec --enable-nvenc
+2025-12-11T17:59:31.901Z   WARNING: library configuration mismatch
+2025-12-11T17:59:31.901Z   avutil      configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnanon_ay8hny --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+2025-12-11T17:59:31.901Z   avcodec     configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnanon_ay8hny --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+2025-12-11T17:59:31.901Z   avformat    configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnanon_ay8hny --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+2025-12-11T17:59:31.901Z   avdevice    configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnanon_ay8hny --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+2025-12-11T17:59:31.901Z   avfilter    configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnanon_ay8hny --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+2025-12-11T17:59:31.901Z   swscale     configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnanon_ay8hny --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+2025-12-11T17:59:31.901Z   swresample  configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnanon_ay8hny --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+2025-12-11T17:59:31.901Z   postproc    configuration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnanon_ay8hny --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared
+2025-12-11T17:59:31.901Z   libavutil      58.  2.100 / 58. 29.100
+2025-12-11T17:59:31.901Z   libavcodec     60.  3.100 / 60. 31.102
+2025-12-11T17:59:31.901Z   libavformat    60.  3.100 / 60. 16.100
+2025-12-11T17:59:31.901Z   libavdevice    60.  1.100 / 60.  3.100
+2025-12-11T17:59:31.901Z   libavfilter     9.  3.100 /  9. 12.100
+2025-12-11T17:59:31.901Z   libswscale      7.  1.100 /  7.  5.100
+2025-12-11T17:59:31.901Z   libswresample   4. 10.100 /  4. 12.100
+2025-12-11T17:59:31.901Z   libpostproc    57.  1.100 / 57.  3.100
+2025-12-11T17:59:31.901Z WARNING: defaulting hwaccel_output_format to qsv for compatibility with old commandlines. This behaviour is DEPRECATED and will be removed in the future. Please explicitly set "-hwaccel_output_format qsv".
+2025-12-11T17:59:31.901Z Input #0, matroska,webm, from '/anon_a70fo9/anon_rx34ir/anon_f3b5b anon_ra1vpn anon_py0z3/anon_zxsehw/anon_8tuixk.mkv':
+2025-12-11T17:59:31.901Z   Metadata:
+2025-12-11T17:59:31.901Z     MINOR_VERSION   : 512
+2025-12-11T17:59:31.901Z     COMPATIBLE_BRANDS: isomiso2avc1mp41
+2025-12-11T17:59:31.901Z     MAJOR_BRAND     : isom
+2025-12-11T17:59:31.901Z     ENCODER         : Lavf60.16.100
+2025-12-11T17:59:31.901Z   Duration: 00:00:26.91, start: 0.000000, bitrate: 10345 kb/s
+2025-12-11T17:59:31.901Z   Stream #0:0: Video: h264 (High), yuv420p(tv, bt709, progressive), 2560x4552 [SAR 4096:4095 DAR 262144:466011], SAR 5121:5120 DAR 9:16, 30 fps, 30 tbr, 1k tbn (default)
+2025-12-11T17:59:31.901Z     Metadata:
+2025-12-11T17:59:31.901Z       HANDLER_NAME    : anon_20rhno Media file produced by Google Inc.
+2025-12-11T17:59:31.901Z       VENDOR_ID       : [0][0][0][0]
+2025-12-11T17:59:31.901Z       ENCODER         : Lavc60.3.100 libx264
+2025-12-11T17:59:31.901Z       BPS             : 10240915
+2025-12-11T17:59:31.901Z       DURATION        : 00:00:26.833333333
+2025-12-11T17:59:31.901Z       NUMBER_OF_FRAMES: 805
+2025-12-11T17:59:31.901Z       NUMBER_OF_BYTES : 34349311
+2025-12-11T17:59:31.901Z       _STATISTICS_WRITING_APP: mkvpropedit v95.0 ('Goodbye Stranger') 64-bit
+2025-12-11T17:59:31.901Z       _STATISTICS_WRITING_DATE_UTC: 2025-12-11 17:59:26
+2025-12-11T17:59:31.901Z       _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2025-12-11T17:59:31.901Z   Stream #0:1(eng): Audio: aac (LC), 44100 Hz, stereo, fltp (default)
+2025-12-11T17:59:31.901Z     Metadata:
+2025-12-11T17:59:31.901Z       HANDLER_NAME    : anon_20rhno Media file produced by Google Inc.
+2025-12-11T17:59:31.901Z       VENDOR_ID       : [0][0][0][0]
+2025-12-11T17:59:31.901Z       BPS             : 129340
+2025-12-11T17:59:31.901Z       DURATION        : 00:00:26.888000000
+2025-12-11T17:59:31.901Z       NUMBER_OF_FRAMES: 1159
+2025-12-11T17:59:31.901Z       NUMBER_OF_BYTES : 434715
+2025-12-11T17:59:31.901Z       _STATISTICS_WRITING_APP: mkvpropedit v95.0 ('Goodbye Stranger') 64-bit
+2025-12-11T17:59:31.901Z       _STATISTICS_WRITING_DATE_UTC: 2025-12-11 17:59:26
+2025-12-11T17:59:31.901Z       _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2025-12-11T17:59:31.901Z libva info: VA-API version 1.22.0
+2025-12-11T17:59:31.901Z libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so
+2025-12-11T17:59:31.901Z libva info: Found init function __vaDriverInit_1_22
+2025-12-11T17:59:31.901Z libva info: va_openDriver() returns 0
+2025-12-11T17:59:31.901Z libva info: VA-API version 1.22.0
+2025-12-11T17:59:31.901Z libva info: Trying to open /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so
+2025-12-11T17:59:31.901Z libva info: Found init function __vaDriverInit_1_22
+2025-12-11T17:59:31.901Z libva info: va_openDriver() returns 0
+2025-12-11T17:59:31.901Z Stream manon_ay8hning:
+2025-12-11T17:59:31.901Z   Stream #0:0 -> #0:0 (h264 (h264_qsv) -> hevc (hevc_qsv))
+2025-12-11T17:59:31.901Z   Stream #0:1 -> #0:1 (copy)
+2025-12-11T17:59:31.901Z Press [q] to stop, [?] for help
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 98 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 27 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 53 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 54 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 82 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 112 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 49 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 57 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 58 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 47 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 58 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 41 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 35 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Error initializing the MFX video decoder: unsupported (-3)
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Function not implemented
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] More data is required to decode header
+2025-12-11T17:59:31.901Z     Last message repeated 6 times
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Invalid argument
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] video_get_buffer: image parameters invalid
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] get_buffer() failed
+2025-12-11T17:59:31.901Z [h264_qsv @ 0x5e21fe0ddcc0] Too many errors when draining, this is a bug. Stop draining and force EOF.
+2025-12-11T17:59:31.901Z Error while decoding stream #0:0: Internal bug, should not have hanon_ay8hnened
+2025-12-11T17:59:31.901Z Output #0, matroska, to '/anon_zssw4o/anon_i2bekc/1765475968009/anon_8tuixk.mkv':
+2025-12-11T17:59:31.901Z   Metadata:
+2025-12-11T17:59:31.901Z     MINOR_VERSION   : 512
+2025-12-11T17:59:31.901Z     COMPATIBLE_BRANDS: isomiso2avc1mp41
+2025-12-11T17:59:31.901Z     MAJOR_BRAND     : isom
+2025-12-11T17:59:31.901Z     encoder         : Lavf60.16.100
+2025-12-11T17:59:31.901Z   Stream #0:0: Video: hevc, nv12, 2560x4552 [SAR 4096:4095 DAR 262144:466011], q=2-31, 1000 kb/s, 30 fps, 1k tbn (default)
+2025-12-11T17:59:31.901Z     Metadata:
+2025-12-11T17:59:31.901Z       HANDLER_NAME    : anon_20rhno Media file produced by Google Inc.
+2025-12-11T17:59:31.901Z       VENDOR_ID       : [0][0][0][0]
+2025-12-11T17:59:31.901Z       _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2025-12-11T17:59:31.901Z       BPS             : 10240915
+2025-12-11T17:59:31.901Z       DURATION        : 00:00:26.833333333
+2025-12-11T17:59:31.901Z       NUMBER_OF_FRAMES: 805
+2025-12-11T17:59:31.901Z       NUMBER_OF_BYTES : 34349311
+2025-12-11T17:59:31.901Z       _STATISTICS_WRITING_APP: mkvpropedit v95.0 ('Goodbye Stranger') 64-bit
+2025-12-11T17:59:31.901Z       _STATISTICS_WRITING_DATE_UTC: 2025-12-11 17:59:26
+2025-12-11T17:59:31.901Z       encoder         : Lavc60.3.100 hevc_qsv
+2025-12-11T17:59:31.901Z     Side data:
+2025-12-11T17:59:31.901Z       cpb: bitrate max/min/avg: 0/0/1000000 buffer size: 0 vbv_delay: N/A
+2025-12-11T17:59:31.901Z   Stream #0:1(eng): Audio: aac (LC) ([255][0][0][0] / 0x00FF), 44100 Hz, stereo, fltp (default)
+2025-12-11T17:59:31.901Z     Metadata:
+2025-12-11T17:59:31.901Z       HANDLER_NAME    : anon_20rhno Media file produced by Google Inc.
+2025-12-11T17:59:31.901Z       VENDOR_ID       : [0][0][0][0]
+2025-12-11T17:59:31.901Z       BPS             : 129340
+2025-12-11T17:59:31.901Z       DURATION        : 00:00:26.888000000
+2025-12-11T17:59:31.901Z       NUMBER_OF_FRAMES: 1159
+2025-12-11T17:59:31.901Z       NUMBER_OF_BYTES : 434715
+2025-12-11T17:59:31.901Z       _STATISTICS_WRITING_APP: mkvpropedit v95.0 ('Goodbye Stranger') 64-bit
+2025-12-11T17:59:31.901Z       _STATISTICS_WRITING_DATE_UTC: 2025-12-11 17:59:26
+2025-12-11T17:59:31.901Z       _STATISTICS_TAGS: BPS DURATION NUMBER_OF_FRAMES NUMBER_OF_BYTES
+2025-12-11T17:59:31.901Z frame=    0 fps=0.0 q=0.0 size=     242kB time=00:00:26.88 bitrate=  73.9kbits/s speed= 131x    frame=    0 fps=0.0 q=0.0 Lsize=     434kB time=00:00:26.88 bitrate= 132.3kbits/s speed=56.5x    
+2025-12-11T17:59:31.901Z video:0kB audio:425kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.267003%
+2025-12-11T17:59:31.901Z Conversion failed!
+2025-12-11T17:59:31.901Z 
+2025-12-11T17:59:31.903Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:CLI tdarr-ffmpeg exited with code: 69
+2025-12-11T17:59:31.910Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Running FFmpeg failed
+2025-12-11T17:59:31.912Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[-error-]
+2025-12-11T17:59:31.916Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Error: FFmpeg failed
+2025-12-11T17:59:31.920Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:"FFmpeg failed"
+2025-12-11T17:59:31.921Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:"Error: FFmpeg failed\n    at /anon_ay8hn/Tdarr_Node/assets/anon_ay8hn/plugins/FlowPlugins/CommunityFlowPlugins/ffmpegCommand/ffmpegCommandExecute/1.0.0/index.js:195:27\n    at step (/anon_ay8hn/Tdarr_Node/assets/anon_ay8hn/plugins/FlowPlugins/CommunityFlowPlugins/ffmpegCommand/ffmpegCommandExecute/1.0.0/index.js:33:23)\n    at Object.next (/anon_ay8hn/Tdarr_Node/assets/anon_ay8hn/plugins/FlowPlugins/CommunityFlowPlugins/ffmpegCommand/ffmpegCommandExecute/1.0.0/index.js:14:53)\n    at fulfilled (/anon_ay8hn/Tdarr_Node/assets/anon_ay8hn/plugins/FlowPlugins/CommunityFlowPlugins/ffmpegCommand/ffmpegCommandExecute/1.0.0/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+2025-12-11T17:59:31.926Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Flow has failed
+2025-12-11T17:59:31.927Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W09] [-error-] Job end
+2025-12-11T17:59:31.928Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Transcoding error encountered. Check sections above.
+2025-12-11T17:59:31.929Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:[Step W10] Worker processing end
+2025-12-11T17:59:31.930Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:Successfully updated server with verdict: transcodeError
+2025-12-11T17:59:31.931Z BStE6TKdCT:Node[InternalNode]:Worker[clear-cats]:File processing complete
