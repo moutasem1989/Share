@@ -1,0 +1,325 @@
+{
+  "Name": "Grab Album Lists in Artists Folders",
+  "Type": 0,
+  "Revision": 9,
+  "Description": "Custom file based flow.",
+  "Icon": "fas fa-file",
+  "Properties": {
+    "Fields": [],
+    "Variables": {}
+  },
+  "Parts": [
+    {
+      "Uid": "22e0804c-fbd8-41c3-900d-ef542ba5b441",
+      "Name": "",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.File.InputFile",
+      "xPos": 540,
+      "yPos": 70,
+      "Icon": "far fa-file",
+      "Label": "Input File",
+      "Inputs": 0,
+      "Outputs": 1,
+      "OutputConnections": [
+        {
+          "Input": 1,
+          "Output": 1,
+          "InputNode": "e2d4b33e-874c-49cd-b474-6c49afb7d587"
+        }
+      ],
+      "Type": 0
+    },
+    {
+      "Uid": "e2d4b33e-874c-49cd-b474-6c49afb7d587",
+      "Name": "Check File Name",
+      "Color": "",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.File.FileNameMatches",
+      "xPos": 540,
+      "yPos": 150,
+      "Icon": "fas fa-equals",
+      "Label": "File Name Matches",
+      "Inputs": 1,
+      "Outputs": 2,
+      "OutputConnections": [
+        {
+          "Input": 1,
+          "Output": 1,
+          "InputNode": "f6f94a75-7881-4560-b2d7-e1f74f06a9f1"
+        }
+      ],
+      "Type": 3,
+      "Model": {
+        "Value": "*list*"
+      }
+    },
+    {
+      "Uid": "e4db57ee-8c1d-44f8-bd50-10b7f86cbde1",
+      "Name": "Grab List Items",
+      "Color": "",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.Scripting.ShellScript",
+      "xPos": 420,
+      "yPos": 470,
+      "Icon": "svg:bash",
+      "Label": "Shell Script (.sh)",
+      "Inputs": 1,
+      "Outputs": 1,
+      "OutputConnections": [
+        {
+          "Input": 1,
+          "Output": 1,
+          "InputNode": "564b8e56-36a3-4214-917d-1513dcbf7e6f"
+        }
+      ],
+      "ErrorConnection": {
+        "Input": 1,
+        "Output": -1,
+        "InputNode": "563285aa-c3af-4ad1-b27d-3643df612ff1"
+      },
+      "Type": 2,
+      "Model": {
+        "Code": "echo \u0022Create Base directory\u0022\nmkdir -p \u0022/temp/yt-dlp\u0022\n\n# Run yt-dlp\nyt-dlp \\\n    -a \u0022${file.FullName}\u0022 \\\n    --output \u0022/temp/yt-dlp/%(album)s/%(title)s.%(ext)s\u0022 \\\n    --format bestaudio \\\n    --extract-audio \\\n    --audio-format mp3 \\\n    --audio-quality 0 \\\n    --embed-thumbnail \\\n    --embed-metadata \\\n    --convert-thumbnails jpg \\\n    --ppa \u0022EmbedThumbnail\u002Bffmpeg_o:-c:v mjpeg -vf crop=\u0027if(gt(ih,iw),iw,ih):if(gt(iw,ih),ih,iw)\u0027\u0022 \\\n    --yes-playlist\n\necho \u0022Download completed successfully.\u0022\nexit 1",
+        "Outputs": 1
+      }
+    },
+    {
+      "Uid": "563285aa-c3af-4ad1-b27d-3643df612ff1",
+      "Name": "Try YT-DLP Update",
+      "Color": "",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.Scripting.ShellScript",
+      "xPos": 680,
+      "yPos": 520,
+      "Icon": "svg:bash",
+      "Label": "Shell Script (.sh)",
+      "Inputs": 1,
+      "Outputs": 1,
+      "OutputConnections": [
+        {
+          "Input": 1,
+          "Output": 1,
+          "InputNode": "b426b8f8-e8cd-4fe8-9f67-674b5fc30a4f"
+        }
+      ],
+      "ErrorConnection": {
+        "Input": 1,
+        "Output": -1,
+        "InputNode": "b658ccec-a9a5-4782-a233-f8b83751bfad"
+      },
+      "Type": 2,
+      "Model": {
+        "Code": "\necho \u0022Trying YT-DLP Update\u0022\nyt-dlp --update\n\n# Set the exit code to 1\nexit 1",
+        "Outputs": 1
+      }
+    },
+    {
+      "Uid": "b426b8f8-e8cd-4fe8-9f67-674b5fc30a4f",
+      "Name": "Retry Grab List Items",
+      "Color": "",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.Scripting.ShellScript",
+      "xPos": 680,
+      "yPos": 620,
+      "Icon": "svg:bash",
+      "Label": "Shell Script (.sh)",
+      "Inputs": 1,
+      "Outputs": 1,
+      "OutputConnections": [
+        {
+          "Input": 1,
+          "Output": 1,
+          "InputNode": "564b8e56-36a3-4214-917d-1513dcbf7e6f"
+        }
+      ],
+      "ErrorConnection": {
+        "Input": 1,
+        "Output": -1,
+        "InputNode": "d1f47e43-d7be-4453-907d-50fd71844c2d"
+      },
+      "Type": 2,
+      "Model": {
+        "Code": "echo \u0022Create Base directory\u0022\nmkdir -p \u0022/temp/yt-dlp\u0022\n\n# Run yt-dlp\nyt-dlp \\\n    -a \u0022${file.FullName}\u0022 \\\n    --output \u0022/temp/yt-dlp/%(album)s/%(title)s.%(ext)s\u0022 \\\n    --format bestaudio \\\n    --extract-audio \\\n    --audio-format mp3 \\\n    --audio-quality 0 \\\n    --embed-thumbnail \\\n    --embed-metadata \\\n    --convert-thumbnails jpg \\\n    --ppa \u0022EmbedThumbnail\u002Bffmpeg_o:-c:v mjpeg -vf crop=\u0027if(gt(ih,iw),iw,ih):if(gt(iw,ih),ih,iw)\u0027\u0022 \\\n    --yes-playlist\n\necho \u0022Download completed successfully.\u0022\nexit 1",
+        "Outputs": 1
+      }
+    },
+    {
+      "Uid": "d1f47e43-d7be-4453-907d-50fd71844c2d",
+      "Name": "YT-DLP ERROR",
+      "Color": "",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.Functions.Log",
+      "xPos": 880,
+      "yPos": 670,
+      "Icon": "far fa-file-alt",
+      "Label": "Log",
+      "Inputs": 1,
+      "Outputs": 1,
+      "Type": 3,
+      "Model": {
+        "LogType": 0,
+        "Message": "YT-DLP Unable to download List content"
+      }
+    },
+    {
+      "Uid": "b658ccec-a9a5-4782-a233-f8b83751bfad",
+      "Name": "YT-DLP Update ERROR",
+      "Color": "",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.Functions.Log",
+      "xPos": 880,
+      "yPos": 570,
+      "Icon": "far fa-file-alt",
+      "Label": "Log",
+      "Inputs": 1,
+      "Outputs": 1,
+      "Type": 3,
+      "Model": {
+        "LogType": 0,
+        "Message": "YT-DLP Unable to update"
+      }
+    },
+    {
+      "Uid": "564b8e56-36a3-4214-917d-1513dcbf7e6f",
+      "Name": "Move Grabbed Albums",
+      "Color": "#008000",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.File.MoveFolder",
+      "xPos": 420,
+      "yPos": 570,
+      "Icon": "fas fa-people-carry",
+      "Label": "Move Folder",
+      "Inputs": 1,
+      "Outputs": 1,
+      "OutputConnections": [
+        {
+          "Input": 1,
+          "Output": 1,
+          "InputNode": "24598b5e-800a-4d7c-aa83-3c95aa2d3825"
+        }
+      ],
+      "Type": 2,
+      "Model": {
+        "SourcePath": "/temp/yt-dlp/*",
+        "DestinationPath": "{folder.FullName}",
+        "CreateSubfolder": false
+      }
+    },
+    {
+      "Uid": "24598b5e-800a-4d7c-aa83-3c95aa2d3825",
+      "Name": "Delete TEMP Content",
+      "Color": "#FF0000",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.File.Delete",
+      "xPos": 420,
+      "yPos": 650,
+      "Icon": "far fa-trash-alt",
+      "Label": "Delete",
+      "Inputs": 1,
+      "Outputs": 1,
+      "OutputConnections": [
+        {
+          "Input": 1,
+          "Output": 1,
+          "InputNode": "ffae0cbe-83fe-41d3-bbc1-9a60e77a0311"
+        }
+      ],
+      "Type": 2,
+      "Model": {
+        "FileName": "/temp/yt-dlp/*"
+      }
+    },
+    {
+      "Uid": "c3ff55ef-f008-47cb-99e3-7687499a06d3",
+      "Name": "Delete TEMP Content",
+      "Color": "#FF0000",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.File.Delete",
+      "xPos": 420,
+      "yPos": 390,
+      "Icon": "far fa-trash-alt",
+      "Label": "Delete",
+      "Inputs": 1,
+      "Outputs": 1,
+      "OutputConnections": [
+        {
+          "Input": 1,
+          "Output": 1,
+          "InputNode": "e4db57ee-8c1d-44f8-bd50-10b7f86cbde1"
+        }
+      ],
+      "Type": 2,
+      "Model": {
+        "FileName": "/temp/yt-dlp/*"
+      }
+    },
+    {
+      "Uid": "f6f94a75-7881-4560-b2d7-e1f74f06a9f1",
+      "Name": "Is File Not Empty",
+      "Color": "",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.Scripting.ShellScript",
+      "xPos": 500,
+      "yPos": 230,
+      "Icon": "svg:bash",
+      "Label": "Shell Script (.sh)",
+      "Inputs": 1,
+      "Outputs": 2,
+      "OutputConnections": [
+        {
+          "Input": 1,
+          "Output": 1,
+          "InputNode": "7550fc48-8eba-40eb-be1d-a98d568e05c0"
+        }
+      ],
+      "Type": 2,
+      "Model": {
+        "Code": "# Check file exists and is not empty\nif [[ ! -s \u0022${file.FullName}\u0022 ]]; then\n    echo \u0022File is empty or does not exist: ${file.FullName}\u0022\n    exit 2\nelse\n    echo \u0022${file.Name} is Not empty\u0022\n    exit 1\nfi",
+        "Outputs": 2
+      }
+    },
+    {
+      "Uid": "7550fc48-8eba-40eb-be1d-a98d568e05c0",
+      "Name": "List File Has Items",
+      "Color": "",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.Scripting.ShellScript",
+      "xPos": 460,
+      "yPos": 310,
+      "Icon": "svg:bash",
+      "Label": "Shell Script (.sh)",
+      "Inputs": 1,
+      "Outputs": 2,
+      "OutputConnections": [
+        {
+          "Input": 1,
+          "Output": 1,
+          "InputNode": "c3ff55ef-f008-47cb-99e3-7687499a06d3"
+        }
+      ],
+      "Type": 2,
+      "Model": {
+        "Code": "# Check if file contains at least one URL\nif ! grep -Eq \u0027https?://\u0027 \u0022${file.FullName}\u0022; then\n    echo \u0022No URLs found in list file: ${file.FullName}\u0022\n    exit 2\nelse\n    echo \u0022List file ${file.Name} contains at least one URL\u0022\n    exit 1\nfi\n",
+        "Outputs": 2
+      }
+    },
+    {
+      "Uid": "ffae0cbe-83fe-41d3-bbc1-9a60e77a0311",
+      "Name": "Empty List File",
+      "Color": "",
+      "ReadOnly": false,
+      "FlowElementUid": "FileFlows.BasicNodes.Scripting.ShellScript",
+      "xPos": 420,
+      "yPos": 730,
+      "Icon": "svg:bash",
+      "Label": "Shell Script (.sh)",
+      "Inputs": 1,
+      "Outputs": 1,
+      "Type": 2,
+      "Model": {
+        "Code": "echo \u0022Empty List File\u0022\ncat /dev/null \u003E \u0022${file.OriginalName}}\u0022\nexit 1",
+        "Outputs": 1
+      }
+    }
+  ]
+}
